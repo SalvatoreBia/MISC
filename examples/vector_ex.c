@@ -12,6 +12,12 @@ int main()
     srand(time(NULL));
 
     misc_vector vec = misc_vector_create(sizeof(int));
+    if (vec == NULL)
+    {
+        printf("misc_vector handle allocation failed. Exiting...\n");
+        return 1;
+    }
+
     for (size_t i = 0; i < 10; ++i)
     {
         int val = rand() % 100;
