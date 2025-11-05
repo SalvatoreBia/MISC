@@ -1,2 +1,17 @@
 bin/*
 build/*
+
+docs/build/
+docs/xml/
+
+docs/source/__pycache__/
+*.pyc
+
+.DS_Store
+*.swp
+*.swo
+*~
+
+.vscode/
+.idea/
+*.code-workspace

@@ -1,0 +1,75 @@
+\doxysection{queue.\+h}
+\hypertarget{queue_8h_source}{}\label{queue_8h_source}\index{/home/salvatroie/MISC/include/misc/queue.h@{/home/salvatroie/MISC/include/misc/queue.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ QUEUE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ QUEUE\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Opaque\ handle\ to\ a\ queue\ instance.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }misc\_generic\_queue*\ misc\_queue;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ Creates\ a\ new\ queue\ with\ the\ specified\ element\ size.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ Returns\ NULL\ on\ allocation\ failure.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00017\ misc\_queue\ misc\_queue\_create(\textcolor{keywordtype}{size\_t}\ elem\_size);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ Destroys\ the\ queue\ and\ frees\ all\ associated\ memory.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ The\ queue\ handle\ becomes\ invalid\ after\ this\ call.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ misc\_queue\_destroy(misc\_queue\ q);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ Removes\ all\ elements\ from\ the\ queue.}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ The\ queue's\ size\ is\ set\ to\ zero.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ misc\_queue\_clear(misc\_queue\ q);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ Returns\ the\ number\ of\ elements\ currently\ stored\ in\ the\ queue.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{size\_t}\ misc\_queue\_size(\textcolor{keyword}{const}\ misc\_queue\ q);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ *\ Checks\ if\ the\ queue\ is\ empty.}}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ *\ Returns\ 1\ if\ the\ queue\ contains\ no\ elements,\ 0\ otherwise.}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{int}\ misc\_queue\_isempty(\textcolor{keyword}{const}\ misc\_queue\ q);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ *\ Enqueues\ an\ element\ at\ the\ back\ of\ the\ queue.}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ *\ Returns\ 1\ on\ success,\ 0\ on\ allocation\ failure.}}
+\DoxyCodeLine{00045\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{int}\ misc\_queue\_push(misc\_queue\ q,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *elem);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00049\ \textcolor{comment}{\ *\ Dequeues\ the\ front\ element\ from\ the\ queue.}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ *\ If\ out\ is\ not\ NULL,\ the\ removed\ element\ is\ copied\ to\ the\ provided\ address.}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ *\ Does\ nothing\ if\ the\ queue\ is\ empty.}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ misc\_queue\_pop(misc\_queue\ q,\ \textcolor{keywordtype}{void}\ *out);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ *\ Returns\ a\ pointer\ to\ the\ front\ element\ without\ removing\ it.}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ *\ Returns\ NULL\ if\ the\ queue\ is\ empty.}}
+\DoxyCodeLine{00058\ \textcolor{comment}{\ *\ The\ pointer\ remains\ valid\ until\ the\ queue\ is\ modified.}}
+\DoxyCodeLine{00059\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}*\ misc\_queue\_front(\textcolor{keyword}{const}\ misc\_queue\ q);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ *\ Returns\ a\ pointer\ to\ the\ back\ element\ without\ removing\ it.}}
+\DoxyCodeLine{00064\ \textcolor{comment}{\ *\ Returns\ NULL\ if\ the\ queue\ is\ empty.}}
+\DoxyCodeLine{00065\ \textcolor{comment}{\ *\ The\ pointer\ remains\ valid\ until\ the\ queue\ is\ modified.}}
+\DoxyCodeLine{00066\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}*\ misc\_queue\_back(\textcolor{keyword}{const}\ misc\_queue\ q);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ QUEUE\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -2,7 +2,8 @@
 #include <string.h>
 #include "misc/queue.h"
 
-typedef struct Customer {
+typedef struct Customer
+{
     int id;
     char name[30];
 } Customer;
