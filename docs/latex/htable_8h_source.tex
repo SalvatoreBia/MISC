@@ -9,92 +9,34 @@
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
 \DoxyCodeLine{00006\ }
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Opaque\ handle\ to\ a\ hash\ table\ instance.}}
-\DoxyCodeLine{00010\ \textcolor{comment}{\ */}}
 \DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }misc\_generic\_hashtable*\ misc\_htable;}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ Hash\ function\ type.}}
-\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ Takes\ a\ pointer\ to\ a\ key\ and\ returns\ its\ hash\ value.}}
-\DoxyCodeLine{00016\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ size\_t\ (*misc\_hash\_fn)(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ Key\ comparison\ function\ type.}}
-\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ Takes\ two\ key\ pointers\ and\ returns\ 0\ if\ they\ are\ equal,\ non-\/zero\ otherwise.}}
-\DoxyCodeLine{00022\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ int\ (*misc\_key\_cmp\_fn)(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key2);}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ Creates\ a\ new\ hash\ table\ with\ custom\ hash\ and\ key\ comparison\ functions.}}
-\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ The\ caller\ must\ provide\ both\ a\ hash\ function\ and\ a\ comparison\ function.}}
-\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ Returns\ NULL\ on\ allocation\ failure.}}
-\DoxyCodeLine{00029\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00030\ misc\_htable\ misc\_htable\_create(\textcolor{keywordtype}{size\_t}\ value\_size,\ \textcolor{keywordtype}{size\_t}\ key\_size,\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ misc\_hash\_fn\ hash\_func,\ }
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ misc\_key\_cmp\_fn\ key\_cmp);}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00035\ \textcolor{comment}{\ *\ Creates\ a\ new\ hash\ table\ with\ string\ keys.}}
-\DoxyCodeLine{00036\ \textcolor{comment}{\ *\ Uses\ FNV-\/1a\ hash\ function\ and\ strcmp\ for\ key\ comparison.}}
-\DoxyCodeLine{00037\ \textcolor{comment}{\ *\ Returns\ NULL\ on\ allocation\ failure.}}
-\DoxyCodeLine{00038\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00039\ misc\_htable\ misc\_htable\_create\_str(\textcolor{keywordtype}{size\_t}\ value\_size);}
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ size\_t\ (*misc\_hash\_fn)(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ int\ (*misc\_key\_cmp\_fn)(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key2);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00037\ misc\_htable\ misc\_htable\_create(\textcolor{keywordtype}{size\_t}\ value\_size,\ \textcolor{keywordtype}{size\_t}\ key\_size,\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ misc\_hash\_fn\ hash\_func,\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ misc\_key\_cmp\_fn\ key\_cmp);}
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00042\ \textcolor{comment}{\ *\ Creates\ a\ new\ hash\ table\ with\ integer\ keys.}}
-\DoxyCodeLine{00043\ \textcolor{comment}{\ *\ Uses\ a\ specialized\ integer\ hash\ function\ and\ integer\ comparison.}}
-\DoxyCodeLine{00044\ \textcolor{comment}{\ *\ Returns\ NULL\ on\ allocation\ failure.}}
-\DoxyCodeLine{00045\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00046\ misc\_htable\ misc\_htable\_create\_int(\textcolor{keywordtype}{size\_t}\ value\_size);}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00049\ \textcolor{comment}{\ *\ Destroys\ the\ hash\ table\ and\ frees\ all\ associated\ memory.}}
-\DoxyCodeLine{00050\ \textcolor{comment}{\ *\ All\ key-\/value\ pairs\ are\ removed\ and\ their\ memory\ is\ freed.}}
-\DoxyCodeLine{00051\ \textcolor{comment}{\ *\ The\ hash\ table\ handle\ becomes\ invalid\ after\ this\ call.}}
-\DoxyCodeLine{00052\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ misc\_htable\_destroy(misc\_htable\ ht);}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00056\ \textcolor{comment}{\ *\ Removes\ all\ key-\/value\ pairs\ from\ the\ hash\ table.}}
-\DoxyCodeLine{00057\ \textcolor{comment}{\ *\ The\ hash\ table's\ size\ is\ set\ to\ zero\ but\ capacity\ remains\ unchanged.}}
-\DoxyCodeLine{00058\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ misc\_htable\_clear(misc\_htable\ ht);}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00062\ \textcolor{comment}{\ *\ Returns\ the\ number\ of\ key-\/value\ pairs\ currently\ stored\ in\ the\ hash\ table.}}
-\DoxyCodeLine{00063\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00064\ \textcolor{keywordtype}{size\_t}\ misc\_htable\_size(\textcolor{keyword}{const}\ misc\_htable\ ht);}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00067\ \textcolor{comment}{\ *\ Checks\ if\ a\ key\ exists\ in\ the\ hash\ table.}}
-\DoxyCodeLine{00068\ \textcolor{comment}{\ *\ Returns\ 1\ if\ the\ key\ is\ found,\ 0\ otherwise.}}
-\DoxyCodeLine{00069\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00070\ \textcolor{keywordtype}{int}\ misc\_htable\_contains(\textcolor{keyword}{const}\ misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
+\DoxyCodeLine{00047\ misc\_htable\ misc\_htable\_create\_str(\textcolor{keywordtype}{size\_t}\ value\_size);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ misc\_htable\ misc\_htable\_create\_int(\textcolor{keywordtype}{size\_t}\ value\_size);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ misc\_htable\_destroy(misc\_htable\ ht);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ misc\_htable\_clear(misc\_htable\ ht);}
 \DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00073\ \textcolor{comment}{\ *\ Retrieves\ the\ value\ associated\ with\ a\ key.}}
-\DoxyCodeLine{00074\ \textcolor{comment}{\ *\ Returns\ a\ pointer\ to\ the\ value\ if\ the\ key\ exists,\ NULL\ otherwise.}}
-\DoxyCodeLine{00075\ \textcolor{comment}{\ *\ The\ pointer\ remains\ valid\ until\ the\ hash\ table\ is\ modified.}}
-\DoxyCodeLine{00076\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00077\ \textcolor{keywordtype}{void}*\ misc\_htable\_get(\textcolor{keyword}{const}\ misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{size\_t}\ misc\_htable\_size(\textcolor{keyword}{const}\ misc\_htable\ ht);}
 \DoxyCodeLine{00078\ }
-\DoxyCodeLine{00079\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00080\ \textcolor{comment}{\ *\ Inserts\ or\ updates\ a\ key-\/value\ pair\ in\ the\ hash\ table.}}
-\DoxyCodeLine{00081\ \textcolor{comment}{\ *\ If\ the\ key\ already\ exists,\ its\ value\ is\ updated.}}
-\DoxyCodeLine{00082\ \textcolor{comment}{\ *\ If\ the\ key\ does\ not\ exist,\ a\ new\ entry\ is\ created.}}
-\DoxyCodeLine{00083\ \textcolor{comment}{\ *\ Automatically\ rehashes\ when\ the\ load\ factor\ exceeds\ 0.75.}}
-\DoxyCodeLine{00084\ \textcolor{comment}{\ *\ Returns\ 1\ on\ success,\ 0\ on\ allocation\ failure.}}
-\DoxyCodeLine{00085\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00086\ \textcolor{keywordtype}{int}\ misc\_htable\_put(misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *value);}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00089\ \textcolor{comment}{\ *\ Removes\ a\ key-\/value\ pair\ from\ the\ hash\ table.}}
-\DoxyCodeLine{00090\ \textcolor{comment}{\ *\ Returns\ 1\ if\ the\ key\ was\ found\ and\ removed,\ 0\ otherwise.}}
-\DoxyCodeLine{00091\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00092\ \textcolor{keywordtype}{int}\ misc\_htable\_remove(misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HTABLE\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{int}\ misc\_htable\_contains(\textcolor{keyword}{const}\ misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{void}*\ misc\_htable\_get(\textcolor{keyword}{const}\ misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00106\ \textcolor{keywordtype}{int}\ misc\_htable\_put(misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *value);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00114\ \textcolor{keywordtype}{int}\ misc\_htable\_remove(misc\_htable\ ht,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *key);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HTABLE\_H\ */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

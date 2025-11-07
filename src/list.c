@@ -3,6 +3,15 @@
 #include <string.h>
 
 
+typedef struct misc_generic_node
+{
+
+    void *val;
+    struct misc_generic_node *next;
+    
+} misc_node;
+
+
 struct misc_generic_single_linked_list
 {
 
