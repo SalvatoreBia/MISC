@@ -1,0 +1,5 @@
+<map id="misc_vector_clear" name="misc_vector_clear">
+<area shape="rect" id="Node000001" title="Removes all elements from the vector." alt="" coords="188,5,328,31"/>
+<area shape="rect" id="Node000002" href="$stack_8c.html#a38db90fe7e62bf92afe5a66d13a5be99" title="Removes all elements from the stack." alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,21,140,21,140,15,174,15"/>
+</map>

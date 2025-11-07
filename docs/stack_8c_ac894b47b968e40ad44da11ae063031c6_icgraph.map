@@ -1,0 +1,8 @@
+<map id="misc_stack_size" name="misc_stack_size">
+<area shape="rect" id="Node000001" title="Returns the number of elements currently stored in the stack." alt="" coords="388,5,516,31"/>
+<area shape="rect" id="Node000002" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title=" " alt="" coords="5,5,165,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,21,165,21,165,15,374,15"/>
+<area shape="rect" id="Node000003" href="$stack_8c.html#a2f4c5c18cf8964b7d0949e05db551480" title="Removes the top element from the stack." alt="" coords="213,31,340,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="375,32,341,37,340,32,374,27"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="199,36,165,31,166,26,200,31"/>
+</map>

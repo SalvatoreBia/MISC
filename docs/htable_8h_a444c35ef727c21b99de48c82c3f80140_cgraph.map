@@ -1,0 +1,7 @@
+<map id="misc_htable_create" name="misc_htable_create">
+<area shape="rect" id="Node000001" title="Creates a new hash table with custom hash and key comparison functions." alt="" coords="5,31,155,56"/>
+<area shape="rect" id="Node000002" href="$vector_8c.html#aa3b366918f458f6703de8e3a778cb865" title="Creates a new vector with the specified element size." alt="" coords="213,5,363,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,32,199,26,200,31,155,37"/>
+<area shape="rect" id="Node000003" href="$vector_8c.html#a30fdd89eafc21724ffe1c403af5ac4ce" title="Appends an element to the end of the vector." alt="" coords="203,55,373,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,49,189,53,189,59,155,55"/>
+</map>

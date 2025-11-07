@@ -1,0 +1,13 @@
+<map id="misc_htable_create_int" name="misc_htable_create_int">
+<area shape="rect" id="Node000001" title="Creates a new hash table with integer keys." alt="" coords="5,55,179,80"/>
+<area shape="rect" id="Node000002" href="$htable_8c.html#a1927f0ff1ac8365c30dfe0a26fc886db" title=" " alt="" coords="230,5,373,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,52,233,31,234,36,147,57"/>
+<area shape="rect" id="Node000003" href="$htable_8c.html#a7b6035bd56514c4605cacc979f88532e" title=" " alt="" coords="227,55,376,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,65,213,65,213,70,179,70"/>
+<area shape="rect" id="Node000004" href="$htable_8c.html#a444c35ef727c21b99de48c82c3f80140" title="Creates a new hash table with custom hash and key comparison functions." alt="" coords="227,104,376,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,77,234,98,233,103,146,83"/>
+<area shape="rect" id="Node000005" href="$vector_8c.html#aa3b366918f458f6703de8e3a778cb865" title="Creates a new vector with the specified element size." alt="" coords="435,79,584,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="376,105,421,99,421,105,377,110"/>
+<area shape="rect" id="Node000006" href="$vector_8c.html#a30fdd89eafc21724ffe1c403af5ac4ce" title="Appends an element to the end of the vector." alt="" coords="424,128,595,153"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="377,123,411,127,410,132,376,128"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="misc_queue_isempty" name="misc_queue_isempty">
+<area shape="rect" id="Node000001" title="Checks if the queue is empty." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#a4809bcfc49c5511323e6f10f32953a6b" title="Checks if the list is empty." alt="" coords="213,5,353,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,15,199,15,199,21,166,21"/>
+</map>

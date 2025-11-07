@@ -1,0 +1,5 @@
+<map id="misc_list_back" name="misc_list_back">
+<area shape="rect" id="Node000001" title="Returns a pointer to the last element in the list." alt="" coords="192,5,311,31"/>
+<area shape="rect" id="Node000002" href="$queue_8c.html#a563fe4a8bc1de1250e1cb4bd9206cf81" title="Returns a pointer to the back element without removing it." alt="" coords="5,5,144,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,21,144,21,144,15,178,15"/>
+</map>

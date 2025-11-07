@@ -1,0 +1,5 @@
+<map id="misc_stack_destroy" name="misc_stack_destroy">
+<area shape="rect" id="Node000001" title="Destroys the stack and frees all associated memory." alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000002" href="$vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213" title="Destroys the vector and frees all associated memory." alt="" coords="204,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,15,190,15,190,21,156,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="misc_list_remove" name="misc_list_remove">
+<area shape="rect" id="Node000001" title="Removes the element at the specified index." alt="" coords="212,5,349,31"/>
+<area shape="rect" id="Node000002" href="$htable_8c.html#ac880958f11b12c1471ae1e154a86fbb9" title="Removes a key&#45;value pair from the hash table." alt="" coords="5,5,164,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>

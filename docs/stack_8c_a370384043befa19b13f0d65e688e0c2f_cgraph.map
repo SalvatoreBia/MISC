@@ -1,0 +1,5 @@
+<map id="misc_stack_isempty" name="misc_stack_isempty">
+<area shape="rect" id="Node000001" title="Checks if the stack is empty." alt="" coords="5,5,160,31"/>
+<area shape="rect" id="Node000002" href="$vector_8c.html#a68923da79b63b6b62c35307ad1a58c1a" title="Checks if the vector is empty." alt="" coords="208,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,15,195,15,195,21,160,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="misc_stack_create" name="misc_stack_create">
+<area shape="rect" id="Node000001" title="Creates a new stack with the specified element size." alt="" coords="5,5,148,31"/>
+<area shape="rect" id="Node000002" href="$vector_8c.html#aa3b366918f458f6703de8e3a778cb865" title="Creates a new vector with the specified element size." alt="" coords="196,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,15,183,15,183,21,148,21"/>
+</map>

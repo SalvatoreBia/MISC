@@ -1,0 +1,5 @@
+<map id="misc_queue_pop" name="misc_queue_pop">
+<area shape="rect" id="Node000001" title="Dequeues the front element from the queue." alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#aad719fd3f6c91beaae26e856daecd43b" title="Removes the first element from the list." alt="" coords="184,5,327,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
+</map>
