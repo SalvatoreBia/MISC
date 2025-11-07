@@ -1,0 +1,9 @@
+<map id="misc_stack_pop" name="misc_stack_pop">
+<area shape="rect" id="Node000001" title="Removes the top element from the stack." alt="" coords="5,31,132,56"/>
+<area shape="rect" id="Node000002" href="$stack_8c.html#ac894b47b968e40ad44da11ae063031c6" title="Returns the number of elements currently stored in the stack." alt="" coords="197,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,32,183,26,184,31,133,38"/>
+<area shape="rect" id="Node000004" href="$vector_8c.html#ae09df20f6fa35fdb6630d97083fdec10" title="Removes and optionally retrieves the last element from the vector." alt="" coords="180,55,343,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,49,167,53,166,58,132,54"/>
+<area shape="rect" id="Node000003" href="$vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="391,5,540,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,15,377,15,377,21,326,21"/>
+</map>

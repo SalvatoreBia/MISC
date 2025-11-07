@@ -1,0 +1,16 @@
+<map id="misc_graph_destroy" name="misc_graph_destroy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,159,131"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#a2780dfc89df50644588b6a7320d32890" title="Destroys the list and frees all associated memory." alt="" coords="214,5,350,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,103,146,72,206,40,222,33,224,38,208,44,149,77,102,107"/>
+<area shape="rect" id="Node000004" href="$stack_8c.html#a06478412f252903ff6caab548e6d1b8f" title="Destroys the stack and frees all associated memory." alt="" coords="207,55,357,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,103,217,81,219,86,134,108"/>
+<area shape="rect" id="Node000005" href="$vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213" title="Destroys the vector and frees all associated memory." alt="" coords="405,80,563,105"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="159,111,391,96,391,101,159,116"/>
+<area shape="rect" id="Node000006" href="$vector_8c.html#a6e5ed84fe8737be3709265bf76021e09" title="Returns a pointer to the element at the specified index." alt="" coords="217,156,347,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="134,128,219,150,217,155,132,133"/>
+<area shape="rect" id="Node000007" href="$vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="207,205,357,231"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="102,129,149,159,208,192,224,198,222,203,206,196,146,164,99,133"/>
+<area shape="rect" id="Node000003" href="$list_8c.html#af046f424af8cb38e54786924187889b0" title="Removes all elements from the list." alt="" coords="425,5,543,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,15,411,15,411,21,350,21"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="358,74,392,78,391,84,357,79"/>
+</map>

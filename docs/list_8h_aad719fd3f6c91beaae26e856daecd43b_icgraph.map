@@ -1,0 +1,9 @@
+<map id="misc_list_popfront" name="misc_list_popfront">
+<area shape="rect" id="Node000001" title="Removes the first element from the list." alt="" coords="397,31,540,56"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997" title="Removes the element at the specified index." alt="" coords="212,5,349,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="384,35,349,30,350,25,384,29"/>
+<area shape="rect" id="Node000004" href="$queue_8c.html#acc158a5552fde4d8f1f40d86cae49311" title="Dequeues the front element from the queue." alt="" coords="215,55,346,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="384,57,346,62,346,56,383,52"/>
+<area shape="rect" id="Node000003" href="$htable_8c.html#ac880958f11b12c1471ae1e154a86fbb9" title="Removes a key&#45;value pair from the hash table." alt="" coords="5,5,164,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>

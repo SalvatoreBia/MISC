@@ -1,0 +1,13 @@
+<map id="misc_vector_length" name="misc_vector_length">
+<area shape="rect" id="Node000001" title="Returns the number of elements currently stored in the vector." alt="" coords="589,22,739,47"/>
+<area shape="rect" id="Node000002" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title=" " alt="" coords="5,22,165,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="596,22,541,13,440,8,338,11,166,26,165,21,338,5,440,3,542,8,597,17"/>
+<area shape="rect" id="Node000003" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title=" " alt="" coords="388,22,541,47"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="575,37,542,37,542,32,575,32"/>
+<area shape="rect" id="Node000004" href="$stack_8c.html#ac894b47b968e40ad44da11ae063031c6" title="Returns the number of elements currently stored in the stack." alt="" coords="401,71,529,97"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="600,53,517,74,516,69,598,48"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="386,72,340,64,165,44,166,39,340,59,387,66"/>
+<area shape="rect" id="Node000005" href="$stack_8c.html#a2f4c5c18cf8964b7d0949e05db551480" title="Removes the top element from the stack." alt="" coords="213,73,340,98"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="387,87,340,88,340,82,387,82"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="214,72,134,50,135,45,215,66"/>
+</map>

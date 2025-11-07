@@ -1,0 +1,7 @@
+<map id="misc_htable_create" name="misc_htable_create">
+<area shape="rect" id="Node000001" title="Creates a new hash table with custom hash and key comparison functions." alt="" coords="227,31,376,56"/>
+<area shape="rect" id="Node000002" href="$htable_8c.html#ae1e39276868eade621e9edcb303af163" title="Creates a new hash table with integer keys." alt="" coords="5,5,179,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,35,179,31,179,26,213,30"/>
+<area shape="rect" id="Node000003" href="$htable_8c.html#a518186bd592f0fecd98db4a2164602ab" title="Creates a new hash table with string keys." alt="" coords="5,55,179,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,56,179,60,179,55,213,51"/>
+</map>

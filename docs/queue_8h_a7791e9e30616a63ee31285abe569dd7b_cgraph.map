@@ -1,0 +1,5 @@
+<map id="misc_queue_create" name="misc_queue_create">
+<area shape="rect" id="Node000001" title="Creates a new queue with the specified element size." alt="" coords="5,5,153,31"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#a52367ba04dc8b69048a72a814c39cd7c" title="Creates a new singly linked list with the specified element size." alt="" coords="201,5,329,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,15,188,15,188,21,154,21"/>
+</map>

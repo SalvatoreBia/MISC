@@ -1,0 +1,5 @@
+<map id="misc_queue_clear" name="misc_queue_clear">
+<area shape="rect" id="Node000001" title="Removes all elements from the queue." alt="" coords="5,5,144,31"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#af046f424af8cb38e54786924187889b0" title="Removes all elements from the list." alt="" coords="192,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
+</map>
