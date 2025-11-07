@@ -1,21 +1,23 @@
 <map id="misc_list_clear" name="misc_list_clear">
-<area shape="rect" id="Node000001" title="Removes all elements from the list." alt="" coords="579,104,697,129"/>
-<area shape="rect" id="Node000002" href="$htable_8c.html#a3da86882659872ff1936b32c2d3c14d8" title="Removes all key&#45;value pairs from the hash table." alt="" coords="391,55,531,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,103,507,83,508,78,579,98"/>
-<area shape="rect" id="Node000003" href="$list_8c.html#a2780dfc89df50644588b6a7320d32890" title="Destroys the list and frees all associated memory." alt="" coords="393,104,529,129"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="565,119,529,119,529,114,565,114"/>
-<area shape="rect" id="Node000010" href="$queue_8c.html#af3b066cbddd349cd1a2c7762dbcfcb8a" title="Removes all elements from the queue." alt="" coords="391,153,530,179"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="579,136,508,156,507,151,578,131"/>
+<area shape="rect" id="Node000001" title="Removes all elements from the list." alt="" coords="579,129,697,155"/>
+<area shape="rect" id="Node000002" href="$htable_8c.html#a3da86882659872ff1936b32c2d3c14d8" title="Removes all key&#45;value pairs from the hash table." alt="" coords="391,80,531,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,128,507,108,508,103,579,123"/>
+<area shape="rect" id="Node000003" href="$list_8c.html#a2780dfc89df50644588b6a7320d32890" title="Destroys the list and frees all associated memory." alt="" coords="393,129,529,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="565,145,529,145,529,139,565,139"/>
+<area shape="rect" id="Node000011" href="$queue_8c.html#af3b066cbddd349cd1a2c7762dbcfcb8a" title="Removes all elements from the queue." alt="" coords="391,179,530,204"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="579,161,508,181,507,176,578,156"/>
 <area shape="rect" id="Node000004" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="183,5,342,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="402,101,389,94,374,81,365,68,356,56,341,44,317,33,320,28,344,40,359,52,369,65,378,77,392,89,405,96"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="398,125,389,119,372,99,364,80,357,62,341,44,321,33,324,28,344,40,361,59,369,78,377,97,392,115,401,121"/>
 <area shape="rect" id="Node000006" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title=" " alt="" coords="183,55,343,80"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="395,103,314,83,315,77,397,98"/>
-<area shape="rect" id="Node000007" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title=" " alt="" coords="186,104,339,129"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="379,119,339,119,339,114,379,114"/>
-<area shape="rect" id="Node000008" href="$htable_8c.html#a6c9af0435d6d99f7e03aab9157d08092" title="Destroys the hash table and frees all associated memory." alt="" coords="184,153,341,179"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="397,135,315,156,314,151,395,130"/>
-<area shape="rect" id="Node000009" href="$queue_8c.html#a346e5d722667c6fcfaf54bc423f1563a" title="Destroys the queue and frees all associated memory." alt="" coords="185,203,341,228"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="402,137,392,143,378,155,369,167,359,180,344,192,317,205,315,200,341,188,356,176,365,164,374,151,389,138,400,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="408,127,390,119,342,94,310,83,312,78,344,89,392,114,410,122"/>
+<area shape="rect" id="Node000007" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="185,104,341,129"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="379,134,340,129,341,124,379,129"/>
+<area shape="rect" id="Node000008" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title=" " alt="" coords="186,153,339,179"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="379,154,340,159,339,154,379,149"/>
+<area shape="rect" id="Node000009" href="$htable_8c.html#a6c9af0435d6d99f7e03aab9157d08092" title="Destroys the hash table and frees all associated memory." alt="" coords="184,203,341,228"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="408,162,392,168,344,192,309,205,307,200,342,188,390,164,406,157"/>
+<area shape="rect" id="Node000010" href="$queue_8c.html#a346e5d722667c6fcfaf54bc423f1563a" title="Destroys the queue and frees all associated memory." alt="" coords="185,252,341,277"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="400,163,392,168,377,186,369,204,361,223,344,241,321,254,319,250,341,237,357,220,364,202,372,183,389,164,397,159"/>
 <area shape="rect" id="Node000005" href="$htable_8c.html#a5cb7c6a8e6597ffff52bca6166604ffa" title="Inserts or updates a key&#45;value pair in the hash table." alt="" coords="5,5,135,31"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="169,21,135,21,135,15,169,15"/>
 </map>
