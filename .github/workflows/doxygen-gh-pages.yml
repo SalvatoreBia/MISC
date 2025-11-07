@@ -27,14 +27,15 @@ jobs:
       - name: Run Doxygen
         run: doxygen Doxyfile
 
-      - name: Commit updated docs (if changed)
+      - name: Commit updated docs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs
+          git add -f docs     # <-- forza l'aggiunta di cartella ignorata
           if ! git diff --cached --quiet; then
             git commit -m "docs: update Doxygen documentation [ci skip]" || true
             git push origin HEAD:main
           else
             echo "No changes in docs to commit."
           fi
+
