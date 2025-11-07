@@ -7,7 +7,7 @@ docs/xml/
 docs/source/__pycache__/
 *.pyc
 
-.DS_Store
+.DS_Storepanel-1-11
 *.swp
 *.swo
 *~
