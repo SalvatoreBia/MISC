@@ -6,6 +6,15 @@
 #include <string.h>
 
 
+typedef struct misc_edge
+{
+
+    size_t target;
+    double weight;
+
+} misc_edge;
+
+
 typedef struct misc_generic_graphnode
 {
 
@@ -103,7 +112,7 @@ size_t misc_graph_addnode(misc_graph g, const void *data, int *status)
 
     memcpy(val, data, g->elem_size);
 
-    misc_list neighbors = misc_list_create(sizeof(size_t));
+    misc_list neighbors = misc_list_create(sizeof(misc_edge));
     if (neighbors == NULL)
     {
         free(val);
@@ -163,8 +172,8 @@ static void del_indegree_links(misc_graph g, size_t idx)
                 size_t list_size = misc_list_size(node->neighbors);
                 for (size_t j = 0; j < list_size; ++j)
                 {
-                    size_t *neighbor_idx = (size_t*)misc_list_get(node->neighbors, j);
-                    if (neighbor_idx != NULL && *neighbor_idx == idx)
+                    misc_edge *edge = (misc_edge*)misc_list_get(node->neighbors, j);
+                    if (edge != NULL && edge->target == idx)
                     {
                         misc_list_remove(node->neighbors, j, NULL);
                         break;
@@ -214,8 +223,8 @@ int misc_graph_islink(misc_graph g, size_t elem1, size_t elem2)
     size_t list_size = misc_list_size(n1->neighbors);
     for (size_t i = 0; i < list_size && !found; ++i)
     {
-        size_t idx = *(size_t*)misc_list_get(n1->neighbors, i);
-        if (idx == elem2) found = 1;
+        misc_edge *edge = (misc_edge*)misc_list_get(n1->neighbors, i);
+        if (edge != NULL && edge->target == elem2) found = 1;
     }
 
     if (g->is_undirected && !found)
@@ -226,8 +235,8 @@ int misc_graph_islink(misc_graph g, size_t elem1, size_t elem2)
             size_t list_size2 = misc_list_size(n2->neighbors);
             for (size_t i = 0; i < list_size2 && !found; ++i)
             {
-                size_t idx = *(size_t*)misc_list_get(n2->neighbors, i);
-                if (idx == elem1) found = 1;
+                misc_edge *edge = (misc_edge*)misc_list_get(n2->neighbors, i);
+                if (edge != NULL && edge->target == elem1) found = 1;
             }
         }
     }
@@ -259,7 +268,8 @@ int misc_graph_link(misc_graph g, size_t elem1, size_t elem2)
     misc_gnode *node1 = (misc_gnode*)misc_vector_get(g->nodes, elem1);
     if (node1 == NULL || node1->neighbors == NULL) return 0;
 
-    if (!misc_list_pushback(node1->neighbors, &elem2)) return 0;
+    misc_edge edge = { .target = elem2, .weight = 1.0 };
+    if (!misc_list_pushback(node1->neighbors, &edge)) return 0;
 
     if (g->is_undirected)
     {
@@ -269,8 +279,8 @@ int misc_graph_link(misc_graph g, size_t elem1, size_t elem2)
             size_t list_size = misc_list_size(node1->neighbors);
             for (size_t i = 0; i < list_size; ++i)
             {
-                size_t *p = (size_t*)misc_list_get(node1->neighbors, i);
-                if (p != NULL && *p == elem2)
+                misc_edge *e = (misc_edge*)misc_list_get(node1->neighbors, i);
+                if (e != NULL && e->target == elem2)
                 {
                     misc_list_remove(node1->neighbors, i, NULL);
                     break;
@@ -278,13 +288,14 @@ int misc_graph_link(misc_graph g, size_t elem1, size_t elem2)
             }
             return 0;
         }
-        if (!misc_list_pushback(node2->neighbors, &elem1))
+        misc_edge edge2 = { .target = elem1, .weight = 1.0 };
+        if (!misc_list_pushback(node2->neighbors, &edge2))
         {
             size_t list_size = misc_list_size(node1->neighbors);
             for (size_t i = 0; i < list_size; ++i)
             {
-                size_t *p = (size_t*)misc_list_get(node1->neighbors, i);
-                if (p != NULL && *p == elem2)
+                misc_edge *e = (misc_edge*)misc_list_get(node1->neighbors, i);
+                if (e != NULL && e->target == elem2)
                 {
                     misc_list_remove(node1->neighbors, i, NULL);
                     break;
@@ -295,4 +306,170 @@ int misc_graph_link(misc_graph g, size_t elem1, size_t elem2)
     }
 
     return 1;
+}
+
+
+void misc_graph_unlink(misc_graph g, size_t elem1, size_t elem2)
+{
+    if (g == NULL) return;
+
+    size_t nnodes = misc_graph_nodecount(g);
+    if (elem1 >= nnodes || elem2 >= nnodes) return;
+
+    misc_gnode *node1 = (misc_gnode*)misc_vector_get(g->nodes, elem1);
+    misc_gnode *node2 = (misc_gnode*)misc_vector_get(g->nodes, elem2);
+    if (node1 == NULL || node2 == NULL) return;
+    if (!node1->is_active || !node2->is_active) return;
+
+    for (size_t i = 0; i < misc_list_size(node1->neighbors); ++i)
+    {
+        misc_edge *edge = (misc_edge*)misc_list_get(node1->neighbors, i);
+        if (edge != NULL && edge->target == elem2)
+        {
+            misc_list_remove(node1->neighbors, i, NULL);
+            break;
+        }
+    }
+
+    if (g->is_undirected)
+    {
+        for (size_t i = 0; i < misc_list_size(node2->neighbors); ++i)
+        {
+            misc_edge *edge = (misc_edge*)misc_list_get(node2->neighbors, i);
+            if (edge != NULL && edge->target == elem1)
+            {
+                misc_list_remove(node2->neighbors, i, NULL);
+                break;
+            }
+        }
+    }
+}
+
+
+int misc_graph_addw(misc_graph g, size_t elem1, size_t elem2, double weight)
+{
+    if (g == NULL) return 0;
+
+    size_t nnodes = misc_vector_length(g->nodes);
+    if (elem1 >= nnodes || elem2 >= nnodes) return 0;
+    if (!misc_graph_isnode(g, elem1) || !misc_graph_isnode(g, elem2)) return 0;
+
+    misc_gnode *node1 = (misc_gnode*)misc_vector_get(g->nodes, elem1);
+    if (node1 == NULL || node1->neighbors == NULL) return 0;
+
+    size_t list_size = misc_list_size(node1->neighbors);
+    for (size_t i = 0; i < list_size; ++i)
+    {
+        misc_edge *edge = (misc_edge*)misc_list_get(node1->neighbors, i);
+        if (edge != NULL && edge->target == elem2)
+        {
+            edge->weight = weight;
+            
+            if (g->is_undirected)
+            {
+                misc_gnode *node2 = (misc_gnode*)misc_vector_get(g->nodes, elem2);
+                if (node2 != NULL && node2->neighbors != NULL)
+                {
+                    size_t list_size2 = misc_list_size(node2->neighbors);
+                    for (size_t j = 0; j < list_size2; ++j)
+                    {
+                        misc_edge *edge2 = (misc_edge*)misc_list_get(node2->neighbors, j);
+                        if (edge2 != NULL && edge2->target == elem1)
+                        {
+                            edge2->weight = weight;
+                            break;
+                        }
+                    }
+                }
+            }
+            return 1;
+        }
+    }
+
+    misc_edge edge = { .target = elem2, .weight = weight };
+    if (!misc_list_pushback(node1->neighbors, &edge)) return 0;
+
+    if (g->is_undirected)
+    {
+        misc_gnode *node2 = (misc_gnode*)misc_vector_get(g->nodes, elem2);
+        if (node2 == NULL || node2->neighbors == NULL)
+        {
+            list_size = misc_list_size(node1->neighbors);
+            for (size_t i = 0; i < list_size; ++i)
+            {
+                misc_edge *e = (misc_edge*)misc_list_get(node1->neighbors, i);
+                if (e != NULL && e->target == elem2)
+                {
+                    misc_list_remove(node1->neighbors, i, NULL);
+                    break;
+                }
+            }
+            return 0;
+        }
+        misc_edge edge2 = { .target = elem1, .weight = weight };
+        if (!misc_list_pushback(node2->neighbors, &edge2))
+        {
+            list_size = misc_list_size(node1->neighbors);
+            for (size_t i = 0; i < list_size; ++i)
+            {
+                misc_edge *e = (misc_edge*)misc_list_get(node1->neighbors, i);
+                if (e != NULL && e->target == elem2)
+                {
+                    misc_list_remove(node1->neighbors, i, NULL);
+                    break;
+                }
+            }
+            return 0;
+        }
+    }
+
+    return 1;
+}
+
+
+double misc_graph_getw(misc_graph g, size_t elem1, size_t elem2, int *status)
+{
+    if (g == NULL || !misc_graph_islink(g, elem1, elem2))
+    {
+        if (status != NULL) *status = -1;
+        return 0.0;
+    }
+
+    misc_gnode *node1 = (misc_gnode*)misc_vector_get(g->nodes, elem1);
+    if (node1 == NULL || node1->neighbors == NULL)
+    {
+        if (status != NULL) *status = -1;
+        return 0.0;
+    }
+
+    size_t list_size = misc_list_size(node1->neighbors);
+    for (size_t i = 0; i < list_size; ++i)
+    {
+        misc_edge *edge = (misc_edge*)misc_list_get(node1->neighbors, i);
+        if (edge != NULL && edge->target == elem2)
+        {
+            if (status != NULL) *status = 0;
+            return edge->weight;
+        }
+    }
+
+    if (status != NULL) *status = -1;
+    return 0.0;
+}
+
+
+size_t misc_graph_linkcount(const misc_graph g)
+{
+    if (g == NULL) return 0;
+
+    size_t tot = 0;
+    for (size_t i = 0; i < misc_vector_length(g->nodes); ++i)
+    {
+        misc_gnode *node = (misc_gnode*)misc_vector_get(g->nodes, i);
+        if (node == NULL) return 0;
+
+        tot += misc_list_size(node->neighbors);
+    }
+
+    return tot;
 }
