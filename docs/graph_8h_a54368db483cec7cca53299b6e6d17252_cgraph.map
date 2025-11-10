@@ -1,5 +1,5 @@
 <map id="misc_graph_delnode" name="misc_graph_delnode">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,231,161,256"/>
+<area shape="rect" id="Node000001" title="Removes a node from the graph." alt="" coords="5,231,161,256"/>
 <area shape="rect" id="Node000002" href="$graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="209,156,353,182"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,228,233,184,235,189,119,233"/>
 <area shape="rect" id="Node000004" href="$vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="621,10,771,35"/>
@@ -10,7 +10,7 @@
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="135,254,219,276,217,281,133,259"/>
 <area shape="rect" id="Node000012" href="$stack_8c.html#abbf435ad349273c752e6542d95e4e161" title="Pushes an element onto the top of the stack." alt="" coords="215,331,348,356"/>
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="104,255,151,285,210,317,226,324,224,329,208,322,149,290,102,259"/>
-<area shape="rect" id="Node000003" href="$graph_8c.html#ab0dcf15752533ff66821f447287de904" title=" " alt="" coords="401,35,573,60"/>
+<area shape="rect" id="Node000003" href="$graph_8c.html#ab0dcf15752533ff66821f447287de904" title="Returns the number of nodes in the graph." alt="" coords="401,35,573,60"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,155,337,113,367,90,400,69,415,63,417,68,403,74,370,94,341,117,296,158"/>
 <area shape="rect" id="Node000005" href="$list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="433,84,541,110"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="311,154,400,119,424,111,425,116,402,124,313,159"/>

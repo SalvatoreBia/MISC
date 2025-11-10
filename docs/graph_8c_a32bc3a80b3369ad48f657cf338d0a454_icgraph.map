@@ -1,5 +1,7 @@
 <map id="misc_graph_islink" name="misc_graph_islink">
-<area shape="rect" id="Node000001" title=" " alt="" coords="181,5,320,31"/>
-<area shape="rect" id="Node000002" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="5,5,133,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,21,134,21,134,15,168,15"/>
+<area shape="rect" id="Node000001" title="Checks if an edge exists between two nodes." alt="" coords="189,31,328,56"/>
+<area shape="rect" id="Node000002" href="$graph_8c.html#aea8e3ef45512537752768ac3a9cf9a70" title="Retrieves the weight of an edge between two nodes." alt="" coords="5,5,141,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,35,141,30,142,25,176,29"/>
+<area shape="rect" id="Node000003" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="9,55,137,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,57,138,62,138,56,175,51"/>
 </map>

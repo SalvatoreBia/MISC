@@ -1,15 +1,19 @@
 <map id="misc_list_popfront" name="misc_list_popfront">
-<area shape="rect" id="Node000001" title="Removes the first element from the list." alt="" coords="601,80,744,105"/>
-<area shape="rect" id="Node000002" href="$list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997" title="Removes the element at the specified index." alt="" coords="416,55,553,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="588,84,553,79,554,74,588,79"/>
-<area shape="rect" id="Node000007" href="$queue_8c.html#acc158a5552fde4d8f1f40d86cae49311" title="Dequeues the front element from the queue." alt="" coords="419,104,550,129"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="588,106,550,111,550,106,587,101"/>
+<area shape="rect" id="Node000001" title="Removes the first element from the list." alt="" coords="601,129,744,155"/>
+<area shape="rect" id="Node000002" href="$list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997" title="Removes the element at the specified index." alt="" coords="416,104,553,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="588,133,553,129,554,123,588,128"/>
+<area shape="rect" id="Node000009" href="$queue_8c.html#acc158a5552fde4d8f1f40d86cae49311" title="Dequeues the front element from the queue." alt="" coords="419,153,550,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="588,155,550,160,550,155,587,150"/>
 <area shape="rect" id="Node000003" href="$graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="217,5,361,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,54,339,33,341,28,421,49"/>
-<area shape="rect" id="Node000005" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="225,55,353,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="402,70,353,70,353,65,402,65"/>
-<area shape="rect" id="Node000006" href="$htable_8c.html#ac880958f11b12c1471ae1e154a86fbb9" title="Removes a key&#45;value pair from the hash table." alt="" coords="209,104,368,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="421,86,341,107,339,101,420,81"/>
-<area shape="rect" id="Node000004" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="5,5,161,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="455,98,414,71,367,44,338,33,340,28,369,40,417,66,458,94"/>
+<area shape="rect" id="Node000005" href="$graph_8c.html#ac43737c9d7c65517445b3bc89a33a928" title="Adds or updates a weighted edge between two nodes." alt="" coords="219,55,358,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="420,103,339,83,341,77,421,98"/>
+<area shape="rect" id="Node000006" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="225,104,353,129"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="402,119,353,119,353,114,402,114"/>
+<area shape="rect" id="Node000007" href="$graph_8c.html#acb4bd25513f3ddc2adb82f3536212050" title="Removes an edge between two nodes." alt="" coords="217,153,361,179"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="421,135,341,156,339,151,420,130"/>
+<area shape="rect" id="Node000008" href="$htable_8c.html#ac880958f11b12c1471ae1e154a86fbb9" title="Removes a key&#45;value pair from the hash table." alt="" coords="209,203,368,228"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="428,137,418,143,403,155,394,167,385,180,369,192,343,205,340,200,367,188,381,176,390,164,399,151,414,138,425,133"/>
+<area shape="rect" id="Node000004" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title="Removes a node from the graph." alt="" coords="5,5,161,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,21,161,21,161,15,203,15"/>
 </map>

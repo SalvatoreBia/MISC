@@ -2,9 +2,9 @@
 <area shape="rect" id="Node000001" title="Destroys the vector and frees all associated memory." alt="" coords="413,105,571,131"/>
 <area shape="rect" id="Node000002" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="207,5,365,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,100,416,72,364,44,335,33,336,28,366,40,419,67,463,95"/>
-<area shape="rect" id="Node000004" href="$graph_8c.html#a21f793affd6c51fa040858330dea0f35" title=" " alt="" coords="213,55,359,80"/>
+<area shape="rect" id="Node000004" href="$graph_8c.html#a21f793affd6c51fa040858330dea0f35" title="Creates a new graph with the specified element size and flags." alt="" coords="213,55,359,80"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="426,105,338,83,339,77,427,99"/>
-<area shape="rect" id="Node000005" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title=" " alt="" coords="5,155,159,180"/>
+<area shape="rect" id="Node000005" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title="Destroys the graph and frees all associated memory." alt="" coords="5,155,159,180"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="400,126,207,146,143,157,142,152,206,141,400,121"/>
 <area shape="rect" id="Node000006" href="$htable_8c.html#a6c9af0435d6d99f7e03aab9157d08092" title="Destroys the hash table and frees all associated memory." alt="" coords="207,156,365,181"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="427,137,339,159,338,153,426,131"/>

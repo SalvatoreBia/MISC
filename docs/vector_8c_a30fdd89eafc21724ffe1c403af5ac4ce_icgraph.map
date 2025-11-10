@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Appends an element to the end of the vector." alt="" coords="435,80,605,105"/>
 <area shape="rect" id="Node000002" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="227,5,386,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="474,77,386,45,351,33,353,28,388,39,476,72"/>
-<area shape="rect" id="Node000004" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title=" " alt="" coords="227,55,387,80"/>
+<area shape="rect" id="Node000004" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title="Adds a new node to the graph with the specified data." alt="" coords="227,55,387,80"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="421,84,386,79,387,74,421,78"/>
 <area shape="rect" id="Node000005" href="$htable_8c.html#a444c35ef727c21b99de48c82c3f80140" title="Creates a new hash table with custom hash and key comparison functions." alt="" coords="232,104,381,129"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="421,106,382,111,381,106,420,101"/>
@@ -14,6 +14,6 @@
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="237,103,148,83,149,77,238,98"/>
 <area shape="rect" id="Node000007" href="$htable_8c.html#a518186bd592f0fecd98db4a2164602ab" title="Creates a new hash table with string keys." alt="" coords="5,104,179,129"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="218,119,179,119,179,114,218,114"/>
-<area shape="rect" id="Node000009" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="14,153,170,179"/>
+<area shape="rect" id="Node000009" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title="Removes a node from the graph." alt="" coords="14,153,170,179"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="226,169,170,169,170,163,226,163"/>
 </map>

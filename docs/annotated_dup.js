@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "misc_edge", "structmisc__edge.html", "structmisc__edge" ],
     [ "misc_generic_graph", "structmisc__generic__graph.html", "structmisc__generic__graph" ],
     [ "misc_generic_graphnode", "structmisc__generic__graphnode.html", "structmisc__generic__graphnode" ],
     [ "misc_generic_hashtable", "structmisc__generic__hashtable.html", "structmisc__generic__hashtable" ],

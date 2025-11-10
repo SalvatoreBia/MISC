@@ -8,11 +8,11 @@
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="579,161,508,181,507,176,578,156"/>
 <area shape="rect" id="Node000004" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="183,5,342,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="398,125,389,119,372,99,364,80,357,62,341,44,321,33,324,28,344,40,361,59,369,78,377,97,392,115,401,121"/>
-<area shape="rect" id="Node000006" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title=" " alt="" coords="183,55,343,80"/>
+<area shape="rect" id="Node000006" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title="Adds a new node to the graph with the specified data." alt="" coords="183,55,343,80"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="408,127,390,119,342,94,310,83,312,78,344,89,392,114,410,122"/>
-<area shape="rect" id="Node000007" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="185,104,341,129"/>
+<area shape="rect" id="Node000007" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title="Removes a node from the graph." alt="" coords="185,104,341,129"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="379,134,340,129,341,124,379,129"/>
-<area shape="rect" id="Node000008" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title=" " alt="" coords="186,153,339,179"/>
+<area shape="rect" id="Node000008" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title="Destroys the graph and frees all associated memory." alt="" coords="186,153,339,179"/>
 <area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="379,154,340,159,339,154,379,149"/>
 <area shape="rect" id="Node000009" href="$htable_8c.html#a6c9af0435d6d99f7e03aab9157d08092" title="Destroys the hash table and frees all associated memory." alt="" coords="184,203,341,228"/>
 <area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="408,162,392,168,344,192,309,205,307,200,342,188,390,164,406,157"/>

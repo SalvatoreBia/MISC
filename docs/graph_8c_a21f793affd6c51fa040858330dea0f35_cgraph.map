@@ -1,5 +1,5 @@
 <map id="misc_graph_create" name="misc_graph_create">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,151,81"/>
+<area shape="rect" id="Node000001" title="Creates a new graph with the specified element size and flags." alt="" coords="5,56,151,81"/>
 <area shape="rect" id="Node000002" href="$stack_8c.html#a1c47f1b69693d7deddcc69cd2990e2e9" title="Creates a new stack with the specified element size." alt="" coords="206,5,349,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,53,213,31,214,37,130,58"/>
 <area shape="rect" id="Node000003" href="$vector_8c.html#aa3b366918f458f6703de8e3a778cb865" title="Creates a new vector with the specified element size." alt="" coords="404,31,553,56"/>

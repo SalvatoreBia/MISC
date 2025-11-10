@@ -1,5 +1,5 @@
 <map id="misc_vector_set" name="misc_vector_set">
 <area shape="rect" id="Node000001" title="Sets the value of the element at the specified index." alt="" coords="213,5,341,31"/>
-<area shape="rect" id="Node000002" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title=" " alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$graph_8c.html#a1bf31c2d629bba5f09399f26f2596312" title="Adds a new node to the graph with the specified data." alt="" coords="5,5,165,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,21,166,21,166,15,200,15"/>
 </map>

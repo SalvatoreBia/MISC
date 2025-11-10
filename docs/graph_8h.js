@@ -10,6 +10,7 @@ var graph_8h =
     [ "misc_graph_create", "graph_8h.html#a21f793affd6c51fa040858330dea0f35", null ],
     [ "misc_graph_delnode", "graph_8h.html#a54368db483cec7cca53299b6e6d17252", null ],
     [ "misc_graph_destroy", "graph_8h.html#a4f93bfc963a401b0f688aeccb04c00c8", null ],
+    [ "misc_graph_getw", "graph_8h.html#aea8e3ef45512537752768ac3a9cf9a70", null ],
     [ "misc_graph_islink", "graph_8h.html#a32bc3a80b3369ad48f657cf338d0a454", null ],
     [ "misc_graph_link", "graph_8h.html#ae44951c4c2e489b1f1c429142ddd2736", null ],
     [ "misc_graph_linkcount", "graph_8h.html#a375b3f49e27fd5e4e98c2c15d74b33ad", null ],

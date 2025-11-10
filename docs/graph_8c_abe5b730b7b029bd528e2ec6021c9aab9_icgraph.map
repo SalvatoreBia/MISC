@@ -1,5 +1,7 @@
 <map id="misc_graph_isnode" name="misc_graph_isnode">
-<area shape="rect" id="Node000001" title=" " alt="" coords="181,5,328,31"/>
-<area shape="rect" id="Node000002" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="5,5,133,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,21,133,21,133,15,168,15"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="192,31,339,56"/>
+<area shape="rect" id="Node000002" href="$graph_8c.html#ac43737c9d7c65517445b3bc89a33a928" title="Adds or updates a weighted edge between two nodes." alt="" coords="5,5,144,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,34,144,30,145,25,179,29"/>
+<area shape="rect" id="Node000003" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="11,55,139,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,57,139,62,139,57,178,52"/>
 </map>

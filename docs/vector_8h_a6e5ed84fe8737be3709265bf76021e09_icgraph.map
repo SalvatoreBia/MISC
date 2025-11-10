@@ -1,39 +1,49 @@
 <map id="misc_vector_get" name="misc_vector_get">
-<area shape="rect" id="Node000001" title="Returns a pointer to the element at the specified index." alt="" coords="420,359,549,384"/>
-<area shape="rect" id="Node000002" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="211,5,370,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="479,345,471,286,453,208,439,166,420,125,398,86,370,52,342,33,344,29,374,48,402,83,425,122,444,164,458,206,476,285,484,344"/>
-<area shape="rect" id="Node000003" href="$htable_8c.html#a5cb7c6a8e6597ffff52bca6166604ffa" title="Inserts or updates a key&#45;value pair in the hash table." alt="" coords="19,31,148,56"/>
-<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="478,345,470,292,452,224,437,188,420,154,397,123,370,96,332,79,275,65,148,50,149,45,276,60,334,74,374,92,401,119,424,151,442,186,457,222,475,291,484,345"/>
-<area shape="rect" id="Node000004" href="$graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="219,107,363,132"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="474,346,461,304,439,253,409,200,370,153,339,134,341,130,374,149,414,197,444,250,466,302,479,344"/>
-<area shape="rect" id="Node000005" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="5,132,161,157"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="472,347,458,312,436,271,407,231,370,198,321,172,266,156,212,148,162,144,162,139,212,142,267,151,323,167,374,193,411,227,441,268,463,310,477,345"/>
-<area shape="rect" id="Node000006" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title=" " alt="" coords="214,208,367,233"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="466,349,427,297,400,270,371,247,348,236,350,231,373,242,404,266,431,293,470,345"/>
-<area shape="rect" id="Node000007" href="$graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454" title=" " alt="" coords="221,257,360,283"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="452,353,371,304,327,285,329,280,373,300,455,349"/>
-<area shape="rect" id="Node000008" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="19,308,147,333"/>
-<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="421,358,372,349,253,334,148,326,148,321,253,329,372,343,422,353"/>
-<area shape="rect" id="Node000009" href="$graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9" title=" " alt="" coords="217,359,364,384"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="406,374,364,374,364,369,406,369"/>
-<area shape="rect" id="Node000010" href="$htable_8c.html#a3da86882659872ff1936b32c2d3c14d8" title="Removes all key&#45;value pairs from the hash table." alt="" coords="221,408,361,433"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="422,390,342,410,341,405,420,385"/>
-<area shape="rect" id="Node000011" href="$htable_8c.html#a8c8bba0d5d66c19cc4bb95c7f2c277e2" title="Checks if a key exists in the hash table." alt="" coords="209,457,372,483"/>
-<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="458,394,419,421,373,447,341,460,339,455,371,442,416,417,455,390"/>
-<area shape="rect" id="Node000012" href="$htable_8c.html#a6c9af0435d6d99f7e03aab9157d08092" title="Destroys the hash table and frees all associated memory." alt="" coords="212,507,369,532"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="469,397,430,447,403,473,373,496,347,509,345,504,371,492,400,469,426,444,465,394"/>
-<area shape="rect" id="Node000013" href="$htable_8c.html#a57075d63c9d476f8b83f08d23b87796d" title="Retrieves the value associated with a key." alt="" coords="226,556,355,581"/>
-<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="476,398,460,431,438,471,409,511,374,545,351,558,348,554,370,541,405,508,434,468,456,429,471,396"/>
-<area shape="rect" id="Node000014" href="$htable_8c.html#ac880958f11b12c1471ae1e154a86fbb9" title="Removes a key&#45;value pair from the hash table." alt="" coords="211,605,370,631"/>
-<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="480,398,467,441,446,494,415,548,396,573,374,595,353,608,350,603,370,591,392,569,411,545,441,492,462,439,475,397"/>
-<area shape="rect" id="Node000015" href="$vector_8c.html#ae521923c698c21a6e006e4fd16fa7a29" title="Returns a pointer to the last element in the vector." alt="" coords="221,655,360,680"/>
-<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="483,398,473,450,453,516,421,585,400,617,374,645,356,657,353,652,370,641,396,614,417,583,448,515,468,449,478,397"/>
-<area shape="rect" id="Node000017" href="$vector_8c.html#aa2afbecc1c90c637059cedbacff0039d" title="Returns a pointer to the first element in the vector." alt="" coords="221,704,360,729"/>
-<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="485,398,478,459,460,538,446,580,427,622,403,661,374,695,357,706,354,702,370,691,399,657,422,619,441,579,455,537,472,458,479,398"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,32,148,38,148,33,197,27"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,132,162,138,161,133,204,127"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="225,289,137,311,135,305,224,283"/>
-<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="224,358,135,336,137,331,225,353"/>
-<area shape="rect" id="Node000016" href="$stack_8c.html#a1e935cc8b44fc77cc4fbc2f4c950e961" title="Returns a pointer to the top element without removing it." alt="" coords="22,655,145,680"/>
-<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="208,670,145,670,145,665,208,665"/>
+<area shape="rect" id="Node000001" title="Returns a pointer to the element at the specified index." alt="" coords="421,458,551,484"/>
+<area shape="rect" id="Node000002" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="212,53,371,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,445,477,377,460,285,446,236,427,187,403,141,371,100,359,89,343,81,346,76,362,84,375,96,407,138,432,185,452,234,466,284,482,376,487,445"/>
+<area shape="rect" id="Node000003" href="$htable_8c.html#a5cb7c6a8e6597ffff52bca6166604ffa" title="Inserts or updates a key&#45;value pair in the hash table." alt="" coords="19,28,148,53"/>
+<area shape="poly" id="edge22_Node000001_Node000003" title=" " alt="" coords="479,445,468,353,446,230,432,169,414,114,394,70,372,42,343,25,311,14,277,9,242,8,176,16,122,30,120,25,175,11,242,3,277,4,312,9,345,20,375,38,399,67,419,112,437,167,451,229,473,352,485,445"/>
+<area shape="rect" id="Node000004" href="$graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="219,154,363,180"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="478,446,468,395,448,329,417,261,396,229,372,201,341,182,344,178,375,197,400,226,421,258,453,327,473,393,484,444"/>
+<area shape="rect" id="Node000005" href="$graph_8c.html#a54368db483cec7cca53299b6e6d17252" title="Removes a node from the graph." alt="" coords="5,129,161,154"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="482,445,479,381,464,297,450,253,431,212,405,175,372,144,342,128,310,117,277,112,242,111,177,119,123,132,122,126,176,113,242,106,277,107,312,112,345,123,375,140,409,171,435,209,455,251,469,295,484,380,488,445"/>
+<area shape="rect" id="Node000006" href="$graph_8c.html#ac43737c9d7c65517445b3bc89a33a928" title="Adds or updates a weighted edge between two nodes." alt="" coords="14,230,153,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="478,445,468,399,448,343,417,288,396,265,372,245,342,231,310,221,277,217,244,216,180,222,127,233,126,228,179,216,243,210,278,211,311,216,344,226,375,241,400,261,422,285,453,341,473,398,483,444"/>
+<area shape="rect" id="Node000007" href="$graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8" title="Destroys the graph and frees all associated memory." alt="" coords="215,458,368,484"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="408,474,368,474,368,468,408,468"/>
+<area shape="rect" id="Node000008" href="$graph_8c.html#aea8e3ef45512537752768ac3a9cf9a70" title="Retrieves the weight of an edge between two nodes." alt="" coords="15,382,151,408"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="417,458,373,448,151,408,152,403,374,443,418,453"/>
+<area shape="rect" id="Node000009" href="$graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454" title="Checks if an edge exists between two nodes." alt="" coords="222,357,361,382"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="454,453,372,404,328,385,330,380,375,399,457,448"/>
+<area shape="rect" id="Node000010" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="19,306,147,332"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="469,448,430,394,403,368,372,347,316,326,256,316,198,313,148,314,147,309,199,307,257,310,317,321,375,342,407,364,434,391,473,445"/>
+<area shape="rect" id="Node000011" href="$graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9" title=" " alt="" coords="218,256,365,281"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="472,447,434,376,406,337,372,303,338,284,340,279,375,298,410,333,438,373,476,444"/>
+<area shape="rect" id="Node000012" href="$graph_8c.html#a375b3f49e27fd5e4e98c2c15d74b33ad" title="Returns the number of edges in the graph." alt="" coords="209,508,373,533"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="423,490,343,510,342,505,421,485"/>
+<area shape="rect" id="Node000013" href="$graph_8c.html#acb4bd25513f3ddc2adb82f3536212050" title="Removes an edge between two nodes." alt="" coords="219,557,363,582"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="459,494,420,521,374,547,342,560,340,555,372,542,417,517,456,490"/>
+<area shape="rect" id="Node000014" href="$htable_8c.html#a3da86882659872ff1936b32c2d3c14d8" title="Removes all key&#45;value pairs from the hash table." alt="" coords="221,606,361,632"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="471,497,431,547,404,573,375,596,348,609,346,604,372,592,401,569,427,543,467,494"/>
+<area shape="rect" id="Node000015" href="$htable_8c.html#a8c8bba0d5d66c19cc4bb95c7f2c277e2" title="Checks if a key exists in the hash table." alt="" coords="210,656,373,681"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="477,498,462,531,440,571,411,611,375,645,352,658,349,653,372,641,407,607,435,568,457,529,472,496"/>
+<area shape="rect" id="Node000016" href="$htable_8c.html#a6c9af0435d6d99f7e03aab9157d08092" title="Destroys the hash table and frees all associated memory." alt="" coords="213,705,370,730"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="481,498,468,541,447,594,417,648,397,673,375,695,354,707,351,703,372,690,393,669,412,645,442,591,463,539,476,497"/>
+<area shape="rect" id="Node000017" href="$htable_8c.html#a57075d63c9d476f8b83f08d23b87796d" title="Retrieves the value associated with a key." alt="" coords="227,754,356,780"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="484,498,474,550,454,616,422,684,401,716,375,744,355,757,353,752,372,740,397,712,418,681,449,614,469,548,479,497"/>
+<area shape="rect" id="Node000018" href="$htable_8c.html#ac880958f11b12c1471ae1e154a86fbb9" title="Removes a key&#45;value pair from the hash table." alt="" coords="212,804,371,829"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="486,498,479,558,461,637,447,679,428,720,404,759,375,793,356,806,353,802,372,789,400,756,423,718,442,677,456,636,473,557,481,497"/>
+<area shape="rect" id="Node000019" href="$vector_8c.html#ae521923c698c21a6e006e4fd16fa7a29" title="Returns a pointer to the last element in the vector." alt="" coords="222,853,361,878"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="487,498,483,567,468,659,454,709,434,758,408,803,375,844,359,855,356,851,372,840,404,800,429,755,449,707,463,658,478,566,482,498"/>
+<area shape="rect" id="Node000021" href="$vector_8c.html#aa2afbecc1c90c637059cedbacff0039d" title="Returns a pointer to the first element in the vector." alt="" coords="222,902,361,928"/>
+<area shape="poly" id="edge26_Node000001_Node000021" title=" " alt="" coords="484,498,470,586,446,704,415,818,396,862,375,893,360,904,357,900,371,889,391,860,410,816,441,703,465,585,478,497"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,57,148,51,148,46,199,52"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,159,161,154,162,149,206,154"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="208,383,152,390,151,384,208,377"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="224,356,135,334,137,329,226,351"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="204,260,153,254,153,249,204,255"/>
+<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="226,287,137,309,135,304,224,282"/>
+<area shape="rect" id="Node000020" href="$stack_8c.html#a1e935cc8b44fc77cc4fbc2f4c950e961" title="Returns a pointer to the top element without removing it." alt="" coords="22,853,145,878"/>
+<area shape="poly" id="edge25_Node000019_Node000020" title=" " alt="" coords="208,868,145,868,145,863,208,863"/>
 </map>

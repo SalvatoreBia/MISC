@@ -141,6 +141,8 @@ Include dependency graph for graph.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmisc__edge.html">misc_edge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmisc__generic__graphnode.html">misc_generic_graphnode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmisc__generic__graph.html">misc_generic_graph</a></td></tr>
@@ -148,31 +150,66 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a73425f618786ddcbb1ec9ba8662d8283" id="r_a73425f618786ddcbb1ec9ba8662d8283"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmisc__edge.html">misc_edge</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a73425f618786ddcbb1ec9ba8662d8283">misc_edge</a></td></tr>
+<tr class="separator:a73425f618786ddcbb1ec9ba8662d8283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac48946bf5a9035415ed9c02b20cc184f" id="r_ac48946bf5a9035415ed9c02b20cc184f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmisc__generic__graphnode.html">misc_generic_graphnode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#ac48946bf5a9035415ed9c02b20cc184f">misc_gnode</a></td></tr>
 <tr class="separator:ac48946bf5a9035415ed9c02b20cc184f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab0dcf15752533ff66821f447287de904" id="r_ab0dcf15752533ff66821f447287de904"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#ab0dcf15752533ff66821f447287de904">misc_graph_nodecount</a> (const <a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g)</td></tr>
+<tr class="memdesc:ab0dcf15752533ff66821f447287de904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of nodes in the graph.  <br /></td></tr>
 <tr class="separator:ab0dcf15752533ff66821f447287de904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f793affd6c51fa040858330dea0f35" id="r_a21f793affd6c51fa040858330dea0f35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a21f793affd6c51fa040858330dea0f35">misc_graph_create</a> (size_t elem_size, int flags)</td></tr>
+<tr class="memdesc:a21f793affd6c51fa040858330dea0f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new graph with the specified element size and flags.  <br /></td></tr>
 <tr class="separator:a21f793affd6c51fa040858330dea0f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f93bfc963a401b0f688aeccb04c00c8" id="r_a4f93bfc963a401b0f688aeccb04c00c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a4f93bfc963a401b0f688aeccb04c00c8">misc_graph_destroy</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g)</td></tr>
+<tr class="memdesc:a4f93bfc963a401b0f688aeccb04c00c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the graph and frees all associated memory.  <br /></td></tr>
 <tr class="separator:a4f93bfc963a401b0f688aeccb04c00c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf31c2d629bba5f09399f26f2596312" id="r_a1bf31c2d629bba5f09399f26f2596312"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a1bf31c2d629bba5f09399f26f2596312">misc_graph_addnode</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, const void *data, int *status)</td></tr>
+<tr class="memdesc:a1bf31c2d629bba5f09399f26f2596312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new node to the graph with the specified data.  <br /></td></tr>
 <tr class="separator:a1bf31c2d629bba5f09399f26f2596312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a203c4a2126bd6939c7a08bd7a364dd29" id="r_a203c4a2126bd6939c7a08bd7a364dd29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29">del_indegree_links</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t idx)</td></tr>
 <tr class="separator:a203c4a2126bd6939c7a08bd7a364dd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54368db483cec7cca53299b6e6d17252" id="r_a54368db483cec7cca53299b6e6d17252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a54368db483cec7cca53299b6e6d17252">misc_graph_delnode</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t elem)</td></tr>
+<tr class="memdesc:a54368db483cec7cca53299b6e6d17252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a node from the graph.  <br /></td></tr>
 <tr class="separator:a54368db483cec7cca53299b6e6d17252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32bc3a80b3369ad48f657cf338d0a454" id="r_a32bc3a80b3369ad48f657cf338d0a454"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454">misc_graph_islink</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t elem1, size_t elem2)</td></tr>
+<tr class="memdesc:a32bc3a80b3369ad48f657cf338d0a454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an edge exists between two nodes.  <br /></td></tr>
 <tr class="separator:a32bc3a80b3369ad48f657cf338d0a454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5b730b7b029bd528e2ec6021c9aab9" id="r_abe5b730b7b029bd528e2ec6021c9aab9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t idx)</td></tr>
 <tr class="separator:abe5b730b7b029bd528e2ec6021c9aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44951c4c2e489b1f1c429142ddd2736" id="r_ae44951c4c2e489b1f1c429142ddd2736"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736">misc_graph_link</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t elem1, size_t elem2)</td></tr>
+<tr class="memdesc:ae44951c4c2e489b1f1c429142ddd2736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an edge between two nodes.  <br /></td></tr>
 <tr class="separator:ae44951c4c2e489b1f1c429142ddd2736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4bd25513f3ddc2adb82f3536212050" id="r_acb4bd25513f3ddc2adb82f3536212050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#acb4bd25513f3ddc2adb82f3536212050">misc_graph_unlink</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t elem1, size_t elem2)</td></tr>
+<tr class="memdesc:acb4bd25513f3ddc2adb82f3536212050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an edge between two nodes.  <br /></td></tr>
+<tr class="separator:acb4bd25513f3ddc2adb82f3536212050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43737c9d7c65517445b3bc89a33a928" id="r_ac43737c9d7c65517445b3bc89a33a928"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#ac43737c9d7c65517445b3bc89a33a928">misc_graph_addw</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t elem1, size_t elem2, double weight)</td></tr>
+<tr class="memdesc:ac43737c9d7c65517445b3bc89a33a928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds or updates a weighted edge between two nodes.  <br /></td></tr>
+<tr class="separator:ac43737c9d7c65517445b3bc89a33a928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8e3ef45512537752768ac3a9cf9a70" id="r_aea8e3ef45512537752768ac3a9cf9a70"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#aea8e3ef45512537752768ac3a9cf9a70">misc_graph_getw</a> (<a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g, size_t elem1, size_t elem2, int *status)</td></tr>
+<tr class="memdesc:aea8e3ef45512537752768ac3a9cf9a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the weight of an edge between two nodes.  <br /></td></tr>
+<tr class="separator:aea8e3ef45512537752768ac3a9cf9a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375b3f49e27fd5e4e98c2c15d74b33ad" id="r_a375b3f49e27fd5e4e98c2c15d74b33ad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a375b3f49e27fd5e4e98c2c15d74b33ad">misc_graph_linkcount</a> (const <a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a> g)</td></tr>
+<tr class="memdesc:a375b3f49e27fd5e4e98c2c15d74b33ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of edges in the graph.  <br /></td></tr>
+<tr class="separator:a375b3f49e27fd5e4e98c2c15d74b33ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a73425f618786ddcbb1ec9ba8662d8283" name="a73425f618786ddcbb1ec9ba8662d8283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73425f618786ddcbb1ec9ba8662d8283">&#9670;&#160;</a></span>misc_edge</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmisc__edge.html">misc_edge</a> <a class="el" href="structmisc__edge.html">misc_edge</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac48946bf5a9035415ed9c02b20cc184f" name="ac48946bf5a9035415ed9c02b20cc184f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac48946bf5a9035415ed9c02b20cc184f">&#9670;&#160;</a></span>misc_gnode</h2>
 
@@ -222,39 +259,41 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00152">152</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
-<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  155</span>    <span class="keywordtype">size_t</span> size = <a class="code hl_function" href="graph_8c.html#ab0dcf15752533ff66821f447287de904">misc_graph_nodecount</a>(g);</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size; ++i)</div>
-<div class="line"><span class="lineno">  157</span>    {</div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">if</span> (i != idx)</div>
-<div class="line"><span class="lineno">  159</span>        {</div>
-<div class="line"><span class="lineno">  160</span>            <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, i);</div>
-<div class="line"><span class="lineno">  161</span>            <span class="keywordflow">if</span> (node != NULL &amp;&amp; node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> &amp;&amp; node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL)</div>
-<div class="line"><span class="lineno">  162</span>            {</div>
-<div class="line"><span class="lineno">  163</span>                <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">  164</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; list_size; ++j)</div>
-<div class="line"><span class="lineno">  165</span>                {</div>
-<div class="line"><span class="lineno">  166</span>                    <span class="keywordtype">size_t</span> *neighbor_idx = (<span class="keywordtype">size_t</span>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, j);</div>
-<div class="line"><span class="lineno">  167</span>                    <span class="keywordflow">if</span> (neighbor_idx != NULL &amp;&amp; *neighbor_idx == idx)</div>
-<div class="line"><span class="lineno">  168</span>                    {</div>
-<div class="line"><span class="lineno">  169</span>                        <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, j, NULL);</div>
-<div class="line"><span class="lineno">  170</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  171</span>                    }</div>
-<div class="line"><span class="lineno">  172</span>                }</div>
-<div class="line"><span class="lineno">  173</span>            }</div>
-<div class="line"><span class="lineno">  174</span>        }</div>
-<div class="line"><span class="lineno">  175</span>    }</div>
-<div class="line"><span class="lineno">  176</span>}</div>
-<div class="ttc" id="agraph_8c_html_ab0dcf15752533ff66821f447287de904"><div class="ttname"><a href="graph_8c.html#ab0dcf15752533ff66821f447287de904">misc_graph_nodecount</a></div><div class="ttdeci">size_t misc_graph_nodecount(const misc_graph g)</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00033">graph.c:33</a></div></div>
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00161">161</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  162</span>{</div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordtype">size_t</span> size = <a class="code hl_function" href="graph_8c.html#ab0dcf15752533ff66821f447287de904">misc_graph_nodecount</a>(g);</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size; ++i)</div>
+<div class="line"><span class="lineno">  166</span>    {</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (i != idx)</div>
+<div class="line"><span class="lineno">  168</span>        {</div>
+<div class="line"><span class="lineno">  169</span>            <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, i);</div>
+<div class="line"><span class="lineno">  170</span>            <span class="keywordflow">if</span> (node != NULL &amp;&amp; node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> &amp;&amp; node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL)</div>
+<div class="line"><span class="lineno">  171</span>            {</div>
+<div class="line"><span class="lineno">  172</span>                <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  173</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; list_size; ++j)</div>
+<div class="line"><span class="lineno">  174</span>                {</div>
+<div class="line"><span class="lineno">  175</span>                    <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, j);</div>
+<div class="line"><span class="lineno">  176</span>                    <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == idx)</div>
+<div class="line"><span class="lineno">  177</span>                    {</div>
+<div class="line"><span class="lineno">  178</span>                        <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, j, NULL);</div>
+<div class="line"><span class="lineno">  179</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  180</span>                    }</div>
+<div class="line"><span class="lineno">  181</span>                }</div>
+<div class="line"><span class="lineno">  182</span>            }</div>
+<div class="line"><span class="lineno">  183</span>        }</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span>}</div>
+<div class="ttc" id="agraph_8c_html_ab0dcf15752533ff66821f447287de904"><div class="ttname"><a href="graph_8c.html#ab0dcf15752533ff66821f447287de904">misc_graph_nodecount</a></div><div class="ttdeci">size_t misc_graph_nodecount(const misc_graph g)</div><div class="ttdoc">Returns the number of nodes in the graph.</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00042">graph.c:42</a></div></div>
 <div class="ttc" id="alist_8c_html_a3db326c38b29b767fea4150c9a8cce73"><div class="ttname"><a href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a></div><div class="ttdeci">size_t misc_list_size(const misc_list list)</div><div class="ttdoc">Returns the number of elements currently stored in the list.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00069">list.c:69</a></div></div>
 <div class="ttc" id="alist_8c_html_a4752f71c443c459acce222f7fb1b5aff"><div class="ttname"><a href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a></div><div class="ttdeci">void * misc_list_get(const misc_list list, size_t idx)</div><div class="ttdoc">Returns a pointer to the element at the specified index.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00299">list.c:299</a></div></div>
 <div class="ttc" id="alist_8c_html_a64d4a33bc26ac3e093e8ff128caa9997"><div class="ttname"><a href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a></div><div class="ttdeci">int misc_list_remove(misc_list list, size_t idx, void *out)</div><div class="ttdoc">Removes the element at the specified index.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00257">list.c:257</a></div></div>
-<div class="ttc" id="astructmisc__generic__graph_html_a0317cc8394fadabc832769aee9fed478"><div class="ttname"><a href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">misc_generic_graph::nodes</a></div><div class="ttdeci">misc_vector nodes</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00022">graph.c:22</a></div></div>
-<div class="ttc" id="astructmisc__generic__graphnode_html"><div class="ttname"><a href="structmisc__generic__graphnode.html">misc_generic_graphnode</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00009">graph.c:10</a></div></div>
-<div class="ttc" id="astructmisc__generic__graphnode_html_a2e18f2d6891003dde52263fe86f1d069"><div class="ttname"><a href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">misc_generic_graphnode::is_active</a></div><div class="ttdeci">int is_active</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00012">graph.c:12</a></div></div>
-<div class="ttc" id="astructmisc__generic__graphnode_html_a77b8c473d40a16346b0490929ce5f655"><div class="ttname"><a href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">misc_generic_graphnode::neighbors</a></div><div class="ttdeci">misc_list neighbors</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00014">graph.c:14</a></div></div>
+<div class="ttc" id="astructmisc__edge_html"><div class="ttname"><a href="structmisc__edge.html">misc_edge</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00009">graph.c:10</a></div></div>
+<div class="ttc" id="astructmisc__edge_html_a83ec9f5db9ad562c0989527133351cba"><div class="ttname"><a href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">misc_edge::target</a></div><div class="ttdeci">size_t target</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00012">graph.c:12</a></div></div>
+<div class="ttc" id="astructmisc__generic__graph_html_a0317cc8394fadabc832769aee9fed478"><div class="ttname"><a href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">misc_generic_graph::nodes</a></div><div class="ttdeci">misc_vector nodes</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00031">graph.c:31</a></div></div>
+<div class="ttc" id="astructmisc__generic__graphnode_html"><div class="ttname"><a href="structmisc__generic__graphnode.html">misc_generic_graphnode</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00018">graph.c:19</a></div></div>
+<div class="ttc" id="astructmisc__generic__graphnode_html_a2e18f2d6891003dde52263fe86f1d069"><div class="ttname"><a href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">misc_generic_graphnode::is_active</a></div><div class="ttdeci">int is_active</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00021">graph.c:21</a></div></div>
+<div class="ttc" id="astructmisc__generic__graphnode_html_a77b8c473d40a16346b0490929ce5f655"><div class="ttname"><a href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">misc_generic_graphnode::neighbors</a></div><div class="ttdeci">misc_list neighbors</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00023">graph.c:23</a></div></div>
 <div class="ttc" id="avector_8c_html_a6e5ed84fe8737be3709265bf76021e09"><div class="ttname"><a href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a></div><div class="ttdeci">void * misc_vector_get(const misc_vector vec, size_t idx)</div><div class="ttdoc">Returns a pointer to the element at the specified index.</div><div class="ttdef"><b>Definition</b> <a href="vector_8c_source.html#l00180">vector.c:180</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -262,7 +301,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="graph_8c_a203c4a2126bd6939c7a08bd7a364dd29_cgraph.png" border="0" usemap="#agraph_8c_a203c4a2126bd6939c7a08bd7a364dd29_cgraph" alt=""/></div>
 <map name="agraph_8c_a203c4a2126bd6939c7a08bd7a364dd29_cgraph" id="agraph_8c_a203c4a2126bd6939c7a08bd7a364dd29_cgraph">
 <area shape="rect" title=" " alt="" coords="5,104,149,129"/>
-<area shape="rect" href="graph_8c.html#ab0dcf15752533ff66821f447287de904" title=" " alt="" coords="197,5,369,31"/>
+<area shape="rect" href="graph_8c.html#ab0dcf15752533ff66821f447287de904" title="Returns the number of nodes in the graph." alt="" coords="197,5,369,31"/>
 <area shape="poly" title=" " alt="" coords="94,102,139,71,196,40,215,32,216,37,198,44,142,76,97,106"/>
 <area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="229,55,337,80"/>
 <area shape="poly" title=" " alt="" coords="130,101,216,81,217,86,132,107"/>
@@ -284,7 +323,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="graph_8c_a203c4a2126bd6939c7a08bd7a364dd29_icgraph.png" border="0" usemap="#agraph_8c_a203c4a2126bd6939c7a08bd7a364dd29_icgraph" alt=""/></div>
 <map name="agraph_8c_a203c4a2126bd6939c7a08bd7a364dd29_icgraph" id="agraph_8c_a203c4a2126bd6939c7a08bd7a364dd29_icgraph">
 <area shape="rect" title=" " alt="" coords="209,5,353,31"/>
-<area shape="rect" href="graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="5,5,161,31"/>
+<area shape="rect" href="graph_8c.html#a54368db483cec7cca53299b6e6d17252" title="Removes a node from the graph." alt="" coords="5,5,161,31"/>
 <area shape="poly" title=" " alt="" coords="195,21,162,21,162,15,195,15"/>
 </map>
 </div>
@@ -323,65 +362,76 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00097">97</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>{</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">if</span> (g == NULL || data == NULL) <span class="keywordflow">goto</span> status_fail;</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordtype">void</span> *val = malloc(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">elem_size</a>);</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (val == NULL) <span class="keywordflow">goto</span> status_fail;</div>
-<div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>    memcpy(val, data, g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">elem_size</a>);</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_struct" href="structmisc__generic__single__linked__list.html">misc_list</a> neighbors = <a class="code hl_function" href="list_8c.html#a52367ba04dc8b69048a72a814c39cd7c">misc_list_create</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>));</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (neighbors == NULL)</div>
-<div class="line"><span class="lineno">  108</span>    {</div>
-<div class="line"><span class="lineno">  109</span>        free(val);</div>
-<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">goto</span> status_fail;</div>
-<div class="line"><span class="lineno">  111</span>    }</div>
+<p>Adds a new node to the graph with the specified data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to modify </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the data to store in the node </td></tr>
+    <tr><td class="paramname">status</td><td>Optional pointer to status code (0 on success, non-zero on failure) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Unique identifier for the newly created node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00106">106</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (g == NULL || data == NULL) <span class="keywordflow">goto</span> status_fail;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordtype">void</span> *val = malloc(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">elem_size</a>);</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span> (val == NULL) <span class="keywordflow">goto</span> status_fail;</div>
 <div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> new_node = { .<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> = 1, .data = val, .neighbors = neighbors };</div>
+<div class="line"><span class="lineno">  113</span>    memcpy(val, data, g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">elem_size</a>);</div>
 <div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordtype">size_t</span> stack_size = <a class="code hl_function" href="stack_8c.html#ac894b47b968e40ad44da11ae063031c6">misc_stack_size</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>);</div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (stack_size == 0)</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_struct" href="structmisc__generic__single__linked__list.html">misc_list</a> neighbors = <a class="code hl_function" href="list_8c.html#a52367ba04dc8b69048a72a814c39cd7c">misc_list_create</a>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>));</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (neighbors == NULL)</div>
 <div class="line"><span class="lineno">  117</span>    {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordtype">size_t</span> new_id = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="vector_8c.html#a30fdd89eafc21724ffe1c403af5ac4ce">misc_vector_pushback</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, &amp;new_node))</div>
-<div class="line"><span class="lineno">  120</span>        {</div>
-<div class="line"><span class="lineno">  121</span>            <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(neighbors);</div>
-<div class="line"><span class="lineno">  122</span>            free(val);</div>
-<div class="line"><span class="lineno">  123</span>            <span class="keywordflow">goto</span> status_fail;</div>
-<div class="line"><span class="lineno">  124</span>        }</div>
-<div class="line"><span class="lineno">  125</span>        </div>
-<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (status != NULL) *status = 0;</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> new_id;</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
-<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  130</span>    {</div>
-<div class="line"><span class="lineno">  131</span>        <span class="keywordtype">size_t</span> id;</div>
-<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="stack_8c.html#a2f4c5c18cf8964b7d0949e05db551480">misc_stack_pop</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>, &amp;<span class="keywordtype">id</span>))</div>
-<div class="line"><span class="lineno">  133</span>        {</div>
-<div class="line"><span class="lineno">  134</span>            <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(neighbors);</div>
-<div class="line"><span class="lineno">  135</span>            free(val);</div>
-<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">goto</span> status_fail;</div>
-<div class="line"><span class="lineno">  137</span>        }</div>
-<div class="line"><span class="lineno">  138</span>        </div>
-<div class="line"><span class="lineno">  139</span>        <a class="code hl_function" href="vector_8c.html#a4a91adcb7036fb69484811ad03ed1325">misc_vector_set</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, <span class="keywordtype">id</span>, &amp;new_node);</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">if</span> (status != NULL) *status = 0;</div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">return</span> id;</div>
-<div class="line"><span class="lineno">  143</span>    }</div>
-<div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>status_fail:</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">if</span> (status != NULL) *status = -1;</div>
-<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">return</span> (<span class="keywordtype">size_t</span>)-1;</div>
-<div class="line"><span class="lineno">  149</span>}</div>
+<div class="line"><span class="lineno">  118</span>        free(val);</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">goto</span> status_fail;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> new_node = { .<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> = 1, .data = val, .neighbors = neighbors };</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordtype">size_t</span> stack_size = <a class="code hl_function" href="stack_8c.html#ac894b47b968e40ad44da11ae063031c6">misc_stack_size</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>);</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> (stack_size == 0)</div>
+<div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordtype">size_t</span> new_id = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="vector_8c.html#a30fdd89eafc21724ffe1c403af5ac4ce">misc_vector_pushback</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, &amp;new_node))</div>
+<div class="line"><span class="lineno">  129</span>        {</div>
+<div class="line"><span class="lineno">  130</span>            <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(neighbors);</div>
+<div class="line"><span class="lineno">  131</span>            free(val);</div>
+<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">goto</span> status_fail;</div>
+<div class="line"><span class="lineno">  133</span>        }</div>
+<div class="line"><span class="lineno">  134</span>        </div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">if</span> (status != NULL) *status = 0;</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">return</span> new_id;</div>
+<div class="line"><span class="lineno">  137</span>    }</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordtype">size_t</span> id;</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="stack_8c.html#a2f4c5c18cf8964b7d0949e05db551480">misc_stack_pop</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>, &amp;<span class="keywordtype">id</span>))</div>
+<div class="line"><span class="lineno">  142</span>        {</div>
+<div class="line"><span class="lineno">  143</span>            <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(neighbors);</div>
+<div class="line"><span class="lineno">  144</span>            free(val);</div>
+<div class="line"><span class="lineno">  145</span>            <span class="keywordflow">goto</span> status_fail;</div>
+<div class="line"><span class="lineno">  146</span>        }</div>
+<div class="line"><span class="lineno">  147</span>        </div>
+<div class="line"><span class="lineno">  148</span>        <a class="code hl_function" href="vector_8c.html#a4a91adcb7036fb69484811ad03ed1325">misc_vector_set</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, <span class="keywordtype">id</span>, &amp;new_node);</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">if</span> (status != NULL) *status = 0;</div>
+<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  152</span>    }</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>status_fail:</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">if</span> (status != NULL) *status = -1;</div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">return</span> (<span class="keywordtype">size_t</span>)-1;</div>
+<div class="line"><span class="lineno">  158</span>}</div>
 <div class="ttc" id="alist_8c_html_a2780dfc89df50644588b6a7320d32890"><div class="ttname"><a href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a></div><div class="ttdeci">void misc_list_destroy(misc_list list)</div><div class="ttdoc">Destroys the list and frees all associated memory.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00043">list.c:43</a></div></div>
 <div class="ttc" id="alist_8c_html_a52367ba04dc8b69048a72a814c39cd7c"><div class="ttname"><a href="list_8c.html#a52367ba04dc8b69048a72a814c39cd7c">misc_list_create</a></div><div class="ttdeci">misc_list misc_list_create(size_t elem_size)</div><div class="ttdoc">Creates a new singly linked list with the specified element size.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00027">list.c:27</a></div></div>
 <div class="ttc" id="astack_8c_html_a2f4c5c18cf8964b7d0949e05db551480"><div class="ttname"><a href="stack_8c.html#a2f4c5c18cf8964b7d0949e05db551480">misc_stack_pop</a></div><div class="ttdeci">int misc_stack_pop(misc_stack st, void *out)</div><div class="ttdoc">Removes the top element from the stack.</div><div class="ttdef"><b>Definition</b> <a href="stack_8c_source.html#l00063">stack.c:63</a></div></div>
 <div class="ttc" id="astack_8c_html_ac894b47b968e40ad44da11ae063031c6"><div class="ttname"><a href="stack_8c.html#ac894b47b968e40ad44da11ae063031c6">misc_stack_size</a></div><div class="ttdeci">size_t misc_stack_size(const misc_stack st)</div><div class="ttdoc">Returns the number of elements currently stored in the stack.</div><div class="ttdef"><b>Definition</b> <a href="stack_8c_source.html#l00045">stack.c:45</a></div></div>
-<div class="ttc" id="astructmisc__generic__graph_html_a2c9f66ec32dc402c55ae5c7b7843400e"><div class="ttname"><a href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">misc_generic_graph::elem_size</a></div><div class="ttdeci">size_t elem_size</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00028">graph.c:28</a></div></div>
-<div class="ttc" id="astructmisc__generic__graph_html_a66e13d0bc8d455ba40054d9302b35610"><div class="ttname"><a href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">misc_generic_graph::ids</a></div><div class="ttdeci">misc_stack ids</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00023">graph.c:23</a></div></div>
+<div class="ttc" id="astructmisc__generic__graph_html_a2c9f66ec32dc402c55ae5c7b7843400e"><div class="ttname"><a href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">misc_generic_graph::elem_size</a></div><div class="ttdeci">size_t elem_size</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00037">graph.c:37</a></div></div>
+<div class="ttc" id="astructmisc__generic__graph_html_a66e13d0bc8d455ba40054d9302b35610"><div class="ttname"><a href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">misc_generic_graph::ids</a></div><div class="ttdeci">misc_stack ids</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00032">graph.c:32</a></div></div>
 <div class="ttc" id="astructmisc__generic__single__linked__list_html"><div class="ttname"><a href="structmisc__generic__single__linked__list.html">misc_generic_single_linked_list</a></div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00015">list.c:16</a></div></div>
 <div class="ttc" id="avector_8c_html_a30fdd89eafc21724ffe1c403af5ac4ce"><div class="ttname"><a href="vector_8c.html#a30fdd89eafc21724ffe1c403af5ac4ce">misc_vector_pushback</a></div><div class="ttdeci">int misc_vector_pushback(misc_vector vec, const void *elem)</div><div class="ttdoc">Appends an element to the end of the vector.</div><div class="ttdef"><b>Definition</b> <a href="vector_8c_source.html#l00076">vector.c:76</a></div></div>
 <div class="ttc" id="avector_8c_html_a4a91adcb7036fb69484811ad03ed1325"><div class="ttname"><a href="vector_8c.html#a4a91adcb7036fb69484811ad03ed1325">misc_vector_set</a></div><div class="ttdeci">void misc_vector_set(misc_vector vec, size_t idx, const void *elem)</div><div class="ttdoc">Sets the value of the element at the specified index.</div><div class="ttdef"><b>Definition</b> <a href="vector_8c_source.html#l00171">vector.c:171</a></div></div>
@@ -391,7 +441,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_a1bf31c2d629bba5f09399f26f2596312_cgraph.png" border="0" usemap="#agraph_8c_a1bf31c2d629bba5f09399f26f2596312_cgraph" alt=""/></div>
 <map name="agraph_8c_a1bf31c2d629bba5f09399f26f2596312_cgraph" id="agraph_8c_a1bf31c2d629bba5f09399f26f2596312_cgraph">
-<area shape="rect" title=" " alt="" coords="5,156,165,181"/>
+<area shape="rect" title="Adds a new node to the graph with the specified data." alt="" coords="5,156,165,181"/>
 <area shape="rect" href="list_8c.html#a52367ba04dc8b69048a72a814c39cd7c" title="Creates a new singly linked list with the specified element size." alt="" coords="235,5,363,31"/>
 <area shape="poly" title=" " alt="" coords="94,154,140,99,174,67,212,40,225,33,227,38,215,44,177,71,144,103,98,157"/>
 <area shape="rect" href="list_8c.html#a2780dfc89df50644588b6a7320d32890" title="Destroys the list and frees all associated memory." alt="" coords="231,55,367,80"/>
@@ -412,6 +462,169 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="vector_8c.html#ae09df20f6fa35fdb6630d97083fdec10" title="Removes and optionally retrieves the last element from the vector." alt="" coords="432,156,595,181"/>
 <area shape="poly" title=" " alt="" coords="362,166,418,166,418,171,362,171"/>
 <area shape="poly" title=" " alt="" coords="566,130,653,151,652,157,565,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac43737c9d7c65517445b3bc89a33a928" name="ac43737c9d7c65517445b3bc89a33a928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43737c9d7c65517445b3bc89a33a928">&#9670;&#160;</a></span>misc_graph_addw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int misc_graph_addw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elem2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds or updates a weighted edge between two nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to modify </td></tr>
+    <tr><td class="paramname">elem1</td><td>Identifier of the first node </td></tr>
+    <tr><td class="paramname">elem2</td><td>Identifier of the second node </td></tr>
+    <tr><td class="paramname">weight</td><td>Weight value for the edge </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The graph must have been created with MISC_GRAPH_WEIGHTED flag. For undirected graphs, sets the weight for both directions. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00349">349</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  350</span>{</div>
+<div class="line"><span class="lineno">  351</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  352</span> </div>
+<div class="line"><span class="lineno">  353</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">  354</span>    <span class="keywordflow">if</span> (elem1 &gt;= nnodes || elem2 &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  355</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a>(g, elem1) || !<a class="code hl_function" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a>(g, elem2)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  356</span> </div>
+<div class="line"><span class="lineno">  357</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">if</span> (node1 == NULL || node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>    <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  361</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
+<div class="line"><span class="lineno">  362</span>    {</div>
+<div class="line"><span class="lineno">  363</span>        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  364</span>        <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  365</span>        {</div>
+<div class="line"><span class="lineno">  366</span>            edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#afa8146cb41e7027eb65ee6759df791c1">weight</a> = weight;</div>
+<div class="line"><span class="lineno">  367</span>            </div>
+<div class="line"><span class="lineno">  368</span>            <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a>)</div>
+<div class="line"><span class="lineno">  369</span>            {</div>
+<div class="line"><span class="lineno">  370</span>                <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
+<div class="line"><span class="lineno">  371</span>                <span class="keywordflow">if</span> (node2 != NULL &amp;&amp; node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL)</div>
+<div class="line"><span class="lineno">  372</span>                {</div>
+<div class="line"><span class="lineno">  373</span>                    <span class="keywordtype">size_t</span> list_size2 = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  374</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; list_size2; ++j)</div>
+<div class="line"><span class="lineno">  375</span>                    {</div>
+<div class="line"><span class="lineno">  376</span>                        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge2 = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, j);</div>
+<div class="line"><span class="lineno">  377</span>                        <span class="keywordflow">if</span> (edge2 != NULL &amp;&amp; edge2-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem1)</div>
+<div class="line"><span class="lineno">  378</span>                        {</div>
+<div class="line"><span class="lineno">  379</span>                            edge2-&gt;<a class="code hl_variable" href="structmisc__edge.html#afa8146cb41e7027eb65ee6759df791c1">weight</a> = weight;</div>
+<div class="line"><span class="lineno">  380</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  381</span>                        }</div>
+<div class="line"><span class="lineno">  382</span>                    }</div>
+<div class="line"><span class="lineno">  383</span>                }</div>
+<div class="line"><span class="lineno">  384</span>            }</div>
+<div class="line"><span class="lineno">  385</span>            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  386</span>        }</div>
+<div class="line"><span class="lineno">  387</span>    }</div>
+<div class="line"><span class="lineno">  388</span> </div>
+<div class="line"><span class="lineno">  389</span>    <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> edge = { .<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> = elem2, .weight = weight };</div>
+<div class="line"><span class="lineno">  390</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, &amp;edge)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a>)</div>
+<div class="line"><span class="lineno">  393</span>    {</div>
+<div class="line"><span class="lineno">  394</span>        <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">if</span> (node2 == NULL || node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL)</div>
+<div class="line"><span class="lineno">  396</span>        {</div>
+<div class="line"><span class="lineno">  397</span>            list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  398</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
+<div class="line"><span class="lineno">  399</span>            {</div>
+<div class="line"><span class="lineno">  400</span>                <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *e = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  401</span>                <span class="keywordflow">if</span> (e != NULL &amp;&amp; e-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  402</span>                {</div>
+<div class="line"><span class="lineno">  403</span>                    <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
+<div class="line"><span class="lineno">  404</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  405</span>                }</div>
+<div class="line"><span class="lineno">  406</span>            }</div>
+<div class="line"><span class="lineno">  407</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  408</span>        }</div>
+<div class="line"><span class="lineno">  409</span>        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> edge2 = { .<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> = elem1, .weight = weight };</div>
+<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, &amp;edge2))</div>
+<div class="line"><span class="lineno">  411</span>        {</div>
+<div class="line"><span class="lineno">  412</span>            list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  413</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
+<div class="line"><span class="lineno">  414</span>            {</div>
+<div class="line"><span class="lineno">  415</span>                <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *e = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  416</span>                <span class="keywordflow">if</span> (e != NULL &amp;&amp; e-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  417</span>                {</div>
+<div class="line"><span class="lineno">  418</span>                    <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
+<div class="line"><span class="lineno">  419</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  420</span>                }</div>
+<div class="line"><span class="lineno">  421</span>            }</div>
+<div class="line"><span class="lineno">  422</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  423</span>        }</div>
+<div class="line"><span class="lineno">  424</span>    }</div>
+<div class="line"><span class="lineno">  425</span> </div>
+<div class="line"><span class="lineno">  426</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  427</span>}</div>
+<div class="ttc" id="agraph_8c_html_abe5b730b7b029bd528e2ec6021c9aab9"><div class="ttname"><a href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a></div><div class="ttdeci">static int misc_graph_isnode(misc_graph g, size_t idx)</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00248">graph.c:248</a></div></div>
+<div class="ttc" id="alist_8c_html_ad9a6fd88109db10289626be1e26befc7"><div class="ttname"><a href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a></div><div class="ttdeci">int misc_list_pushback(misc_list list, const void *elem)</div><div class="ttdoc">Inserts an element at the back of the list.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00115">list.c:115</a></div></div>
+<div class="ttc" id="astructmisc__edge_html_afa8146cb41e7027eb65ee6759df791c1"><div class="ttname"><a href="structmisc__edge.html#afa8146cb41e7027eb65ee6759df791c1">misc_edge::weight</a></div><div class="ttdeci">double weight</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00013">graph.c:13</a></div></div>
+<div class="ttc" id="astructmisc__generic__graph_html_ac6aaa80245da66ed4693d66ec317e723"><div class="ttname"><a href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">misc_generic_graph::is_undirected</a></div><div class="ttdeci">int is_undirected</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00034">graph.c:34</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="graph_8c_ac43737c9d7c65517445b3bc89a33a928_cgraph.png" border="0" usemap="#agraph_8c_ac43737c9d7c65517445b3bc89a33a928_cgraph" alt=""/></div>
+<map name="agraph_8c_ac43737c9d7c65517445b3bc89a33a928_cgraph" id="agraph_8c_ac43737c9d7c65517445b3bc89a33a928_cgraph">
+<area shape="rect" title="Adds or updates a weighted edge between two nodes." alt="" coords="5,141,144,167"/>
+<area shape="rect" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9" title=" " alt="" coords="193,40,340,65"/>
+<area shape="poly" title=" " alt="" coords="94,139,191,82,220,68,222,73,193,87,97,143"/>
+<area shape="rect" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09" title="Returns a pointer to the element at the specified index." alt="" coords="399,15,529,40"/>
+<area shape="poly" title=" " alt="" coords="81,140,97,114,121,81,153,49,191,25,242,9,295,3,347,4,393,10,393,15,347,10,295,9,243,14,193,30,156,53,125,85,101,117,85,142"/>
+<area shape="rect" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="389,77,539,103"/>
+<area shape="poly" title=" " alt="" coords="130,139,192,126,375,98,376,103,192,131,131,144"/>
+<area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="213,141,321,167"/>
+<area shape="poly" title=" " alt="" coords="144,151,199,151,199,157,144,157"/>
+<area shape="rect" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7" title="Inserts an element at the back of the list." alt="" coords="192,191,341,216"/>
+<area shape="poly" title=" " alt="" coords="125,164,204,184,202,190,124,169"/>
+<area shape="rect" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997" title="Removes the element at the specified index." alt="" coords="198,240,335,265"/>
+<area shape="poly" title=" " alt="" coords="94,165,138,195,193,226,209,233,207,238,191,231,135,199,91,169"/>
+<area shape="rect" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73" title="Returns the number of elements currently stored in the list." alt="" coords="210,289,323,315"/>
+<area shape="poly" title=" " alt="" coords="87,165,129,218,159,249,193,276,204,281,201,286,191,280,156,253,125,222,83,168"/>
+<area shape="poly" title=" " alt="" coords="340,40,385,35,386,40,341,46"/>
+<area shape="poly" title=" " alt="" coords="335,63,384,72,383,77,334,68"/>
+<area shape="rect" href="list_8c.html#aad719fd3f6c91beaae26e856daecd43b" title="Removes the first element from the list." alt="" coords="393,240,535,265"/>
+<area shape="poly" title=" " alt="" coords="336,250,379,250,379,255,336,255"/>
 </map>
 </div>
 
@@ -443,41 +656,55 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00040">40</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (elem_size == 0) <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    <a class="code hl_struct" href="structmisc__generic__graph.html">misc_graph</a> g = (<a class="code hl_typedef" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>) malloc(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code hl_struct" href="structmisc__generic__graph.html">misc_generic_graph</a>));</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a> = flags &amp; <a class="code hl_define" href="graph_8h.html#ae07a1e59028cbdd611723c32c9cb90cd">MISC_GRAPH_UNDIRECTED</a>;</div>
-<div class="line"><span class="lineno">   48</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a562d8343dc3d439a2e2736ff7537c9e4">is_weighted</a>   = flags &amp; <a class="code hl_define" href="graph_8h.html#a2855a7757d6478eec0232f077830dda8">MISC_GRAPH_WEIGHTED</a>;</div>
-<div class="line"><span class="lineno">   49</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">elem_size</a>     = elem_size;</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a> = <a class="code hl_function" href="vector_8c.html#aa3b366918f458f6703de8e3a778cb865">misc_vector_create</a>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>));</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a> == NULL)</div>
-<div class="line"><span class="lineno">   53</span>    {</div>
-<div class="line"><span class="lineno">   54</span>        free((<span class="keywordtype">void</span>*)g);</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a> = <a class="code hl_function" href="stack_8c.html#a1c47f1b69693d7deddcc69cd2990e2e9">misc_stack_create</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>));</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a> == NULL)</div>
-<div class="line"><span class="lineno">   60</span>    {</div>
-<div class="line"><span class="lineno">   61</span>        <a class="code hl_function" href="vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213">misc_vector_destroy</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">   62</span>        free((<span class="keywordtype">void</span>*)g);</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><span class="lineno">   64</span>    }</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> g;</div>
-<div class="line"><span class="lineno">   67</span>}</div>
-<div class="ttc" id="agraph_8h_html_a2855a7757d6478eec0232f077830dda8"><div class="ttname"><a href="graph_8h.html#a2855a7757d6478eec0232f077830dda8">MISC_GRAPH_WEIGHTED</a></div><div class="ttdeci">#define MISC_GRAPH_WEIGHTED</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00013">graph.h:13</a></div></div>
-<div class="ttc" id="agraph_8h_html_aca15459cf9f6b5f5bfd56059d88e5405"><div class="ttname"><a href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a></div><div class="ttdeci">struct misc_generic_graph * misc_graph</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00008">graph.h:8</a></div></div>
-<div class="ttc" id="agraph_8h_html_ae07a1e59028cbdd611723c32c9cb90cd"><div class="ttname"><a href="graph_8h.html#ae07a1e59028cbdd611723c32c9cb90cd">MISC_GRAPH_UNDIRECTED</a></div><div class="ttdeci">#define MISC_GRAPH_UNDIRECTED</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00012">graph.h:12</a></div></div>
+<p>Creates a new graph with the specified element size and flags. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elem_size</td><td>Size in bytes of each node's data </td></tr>
+    <tr><td class="paramname">flags</td><td>Graph configuration flags (can be OR'd together):<ul>
+<li>MISC_GRAPH_DIRECTED: creates a directed graph</li>
+<li>MISC_GRAPH_UNDIRECTED: creates an undirected graph</li>
+<li>MISC_GRAPH_WEIGHTED: enables edge weights </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the new graph, or NULL on allocation failure </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00049">49</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span> (elem_size == 0) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_struct" href="structmisc__generic__graph.html">misc_graph</a> g = (<a class="code hl_typedef" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>) malloc(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code hl_struct" href="structmisc__generic__graph.html">misc_generic_graph</a>));</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a> = flags &amp; <a class="code hl_define" href="graph_8h.html#ae07a1e59028cbdd611723c32c9cb90cd">MISC_GRAPH_UNDIRECTED</a>;</div>
+<div class="line"><span class="lineno">   57</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a562d8343dc3d439a2e2736ff7537c9e4">is_weighted</a>   = flags &amp; <a class="code hl_define" href="graph_8h.html#a2855a7757d6478eec0232f077830dda8">MISC_GRAPH_WEIGHTED</a>;</div>
+<div class="line"><span class="lineno">   58</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a2c9f66ec32dc402c55ae5c7b7843400e">elem_size</a>     = elem_size;</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a> = <a class="code hl_function" href="vector_8c.html#aa3b366918f458f6703de8e3a778cb865">misc_vector_create</a>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>));</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a> == NULL)</div>
+<div class="line"><span class="lineno">   62</span>    {</div>
+<div class="line"><span class="lineno">   63</span>        free((<span class="keywordtype">void</span>*)g);</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a> = <a class="code hl_function" href="stack_8c.html#a1c47f1b69693d7deddcc69cd2990e2e9">misc_stack_create</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>));</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a> == NULL)</div>
+<div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_function" href="vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213">misc_vector_destroy</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">   71</span>        free((<span class="keywordtype">void</span>*)g);</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> g;</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+<div class="ttc" id="agraph_8h_html_a2855a7757d6478eec0232f077830dda8"><div class="ttname"><a href="graph_8h.html#a2855a7757d6478eec0232f077830dda8">MISC_GRAPH_WEIGHTED</a></div><div class="ttdeci">#define MISC_GRAPH_WEIGHTED</div><div class="ttdoc">Flag for creating a weighted graph.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00025">graph.h:25</a></div></div>
+<div class="ttc" id="agraph_8h_html_aca15459cf9f6b5f5bfd56059d88e5405"><div class="ttname"><a href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a></div><div class="ttdeci">struct misc_generic_graph * misc_graph</div><div class="ttdoc">Opaque handle to a graph instance.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00010">graph.h:10</a></div></div>
+<div class="ttc" id="agraph_8h_html_ae07a1e59028cbdd611723c32c9cb90cd"><div class="ttname"><a href="graph_8h.html#ae07a1e59028cbdd611723c32c9cb90cd">MISC_GRAPH_UNDIRECTED</a></div><div class="ttdeci">#define MISC_GRAPH_UNDIRECTED</div><div class="ttdoc">Flag for creating an undirected graph.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00020">graph.h:20</a></div></div>
 <div class="ttc" id="astack_8c_html_a1c47f1b69693d7deddcc69cd2990e2e9"><div class="ttname"><a href="stack_8c.html#a1c47f1b69693d7deddcc69cd2990e2e9">misc_stack_create</a></div><div class="ttdeci">misc_stack misc_stack_create(size_t elem_size)</div><div class="ttdoc">Creates a new stack with the specified element size.</div><div class="ttdef"><b>Definition</b> <a href="stack_8c_source.html#l00011">stack.c:11</a></div></div>
-<div class="ttc" id="astructmisc__generic__graph_html"><div class="ttname"><a href="structmisc__generic__graph.html">misc_generic_graph</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00019">graph.c:20</a></div></div>
-<div class="ttc" id="astructmisc__generic__graph_html_a562d8343dc3d439a2e2736ff7537c9e4"><div class="ttname"><a href="structmisc__generic__graph.html#a562d8343dc3d439a2e2736ff7537c9e4">misc_generic_graph::is_weighted</a></div><div class="ttdeci">int is_weighted</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00026">graph.c:26</a></div></div>
-<div class="ttc" id="astructmisc__generic__graph_html_ac6aaa80245da66ed4693d66ec317e723"><div class="ttname"><a href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">misc_generic_graph::is_undirected</a></div><div class="ttdeci">int is_undirected</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00025">graph.c:25</a></div></div>
+<div class="ttc" id="astructmisc__generic__graph_html"><div class="ttname"><a href="structmisc__generic__graph.html">misc_generic_graph</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00028">graph.c:29</a></div></div>
+<div class="ttc" id="astructmisc__generic__graph_html_a562d8343dc3d439a2e2736ff7537c9e4"><div class="ttname"><a href="structmisc__generic__graph.html#a562d8343dc3d439a2e2736ff7537c9e4">misc_generic_graph::is_weighted</a></div><div class="ttdeci">int is_weighted</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00035">graph.c:35</a></div></div>
 <div class="ttc" id="avector_8c_html_a2eee319a34dd1d8735f86b7f94f1d213"><div class="ttname"><a href="vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213">misc_vector_destroy</a></div><div class="ttdeci">void misc_vector_destroy(misc_vector vec)</div><div class="ttdoc">Destroys the vector and frees all associated memory.</div><div class="ttdef"><b>Definition</b> <a href="vector_8c_source.html#l00042">vector.c:42</a></div></div>
 <div class="ttc" id="avector_8c_html_aa3b366918f458f6703de8e3a778cb865"><div class="ttname"><a href="vector_8c.html#aa3b366918f458f6703de8e3a778cb865">misc_vector_create</a></div><div class="ttdeci">misc_vector misc_vector_create(size_t elem_size)</div><div class="ttdoc">Creates a new vector with the specified element size.</div><div class="ttdef"><b>Definition</b> <a href="vector_8c_source.html#l00019">vector.c:19</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -485,7 +712,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_a21f793affd6c51fa040858330dea0f35_cgraph.png" border="0" usemap="#agraph_8c_a21f793affd6c51fa040858330dea0f35_cgraph" alt=""/></div>
 <map name="agraph_8c_a21f793affd6c51fa040858330dea0f35_cgraph" id="agraph_8c_a21f793affd6c51fa040858330dea0f35_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,151,81"/>
+<area shape="rect" title="Creates a new graph with the specified element size and flags." alt="" coords="5,56,151,81"/>
 <area shape="rect" href="stack_8c.html#a1c47f1b69693d7deddcc69cd2990e2e9" title="Creates a new stack with the specified element size." alt="" coords="206,5,349,31"/>
 <area shape="poly" title=" " alt="" coords="128,53,213,31,214,37,130,58"/>
 <area shape="rect" href="vector_8c.html#aa3b366918f458f6703de8e3a778cb865" title="Creates a new vector with the specified element size." alt="" coords="404,31,553,56"/>
@@ -524,37 +751,47 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00179">179</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  180</span>{</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (nnodes == 0 || elem &gt;= nnodes) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  185</span> </div>
-<div class="line"><span class="lineno">  186</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *delnode = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem);</div>
-<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">if</span> (delnode == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">if</span> (!delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  189</span> </div>
-<div class="line"><span class="lineno">  190</span>    delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> = 0;</div>
-<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">if</span> (delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL) <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">if</span> (delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a> != NULL) free(delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a>);</div>
-<div class="line"><span class="lineno">  193</span> </div>
-<div class="line"><span class="lineno">  194</span>    delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> = NULL;</div>
-<div class="line"><span class="lineno">  195</span>    delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a> = NULL;</div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>    <a class="code hl_function" href="stack_8c.html#abbf435ad349273c752e6542d95e4e161">misc_stack_push</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>, &amp;elem);</div>
+<p>Removes a node from the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to modify </td></tr>
+    <tr><td class="paramname">elem</td><td>Identifier of the node to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>All edges connected to this node are also removed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00188">188</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>{</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keywordflow">if</span> (nnodes == 0 || elem &gt;= nnodes) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *delnode = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem);</div>
+<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">if</span> (delnode == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (!delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>    <a class="code hl_function" href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29">del_indegree_links</a>(g, elem);</div>
-<div class="line"><span class="lineno">  200</span>}</div>
-<div class="ttc" id="agraph_8c_html_a203c4a2126bd6939c7a08bd7a364dd29"><div class="ttname"><a href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29">del_indegree_links</a></div><div class="ttdeci">static void del_indegree_links(misc_graph g, size_t idx)</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00152">graph.c:152</a></div></div>
+<div class="line"><span class="lineno">  199</span>    delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> = 0;</div>
+<div class="line"><span class="lineno">  200</span>    <span class="keywordflow">if</span> (delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL) <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">if</span> (delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a> != NULL) free(delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a>);</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> = NULL;</div>
+<div class="line"><span class="lineno">  204</span>    delnode-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a> = NULL;</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <a class="code hl_function" href="stack_8c.html#abbf435ad349273c752e6542d95e4e161">misc_stack_push</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>, &amp;elem);</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>    <a class="code hl_function" href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29">del_indegree_links</a>(g, elem);</div>
+<div class="line"><span class="lineno">  209</span>}</div>
+<div class="ttc" id="agraph_8c_html_a203c4a2126bd6939c7a08bd7a364dd29"><div class="ttname"><a href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29">del_indegree_links</a></div><div class="ttdeci">static void del_indegree_links(misc_graph g, size_t idx)</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00161">graph.c:161</a></div></div>
 <div class="ttc" id="astack_8c_html_abbf435ad349273c752e6542d95e4e161"><div class="ttname"><a href="stack_8c.html#abbf435ad349273c752e6542d95e4e161">misc_stack_push</a></div><div class="ttdeci">int misc_stack_push(misc_stack st, const void *elem)</div><div class="ttdoc">Pushes an element onto the top of the stack.</div><div class="ttdef"><b>Definition</b> <a href="stack_8c_source.html#l00057">stack.c:57</a></div></div>
-<div class="ttc" id="astructmisc__generic__graphnode_html_aaa98d5fd97fa12116e426cdfe86b5dd0"><div class="ttname"><a href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">misc_generic_graphnode::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00013">graph.c:13</a></div></div>
+<div class="ttc" id="astructmisc__generic__graphnode_html_aaa98d5fd97fa12116e426cdfe86b5dd0"><div class="ttname"><a href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">misc_generic_graphnode::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00022">graph.c:22</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_a54368db483cec7cca53299b6e6d17252_cgraph.png" border="0" usemap="#agraph_8c_a54368db483cec7cca53299b6e6d17252_cgraph" alt=""/></div>
 <map name="agraph_8c_a54368db483cec7cca53299b6e6d17252_cgraph" id="agraph_8c_a54368db483cec7cca53299b6e6d17252_cgraph">
-<area shape="rect" title=" " alt="" coords="5,231,161,256"/>
+<area shape="rect" title="Removes a node from the graph." alt="" coords="5,231,161,256"/>
 <area shape="rect" href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="209,156,353,182"/>
 <area shape="poly" title=" " alt="" coords="117,228,233,184,235,189,119,233"/>
 <area shape="rect" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="621,10,771,35"/>
@@ -565,7 +802,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="135,254,219,276,217,281,133,259"/>
 <area shape="rect" href="stack_8c.html#abbf435ad349273c752e6542d95e4e161" title="Pushes an element onto the top of the stack." alt="" coords="215,331,348,356"/>
 <area shape="poly" title=" " alt="" coords="104,255,151,285,210,317,226,324,224,329,208,322,149,290,102,259"/>
-<area shape="rect" href="graph_8c.html#ab0dcf15752533ff66821f447287de904" title=" " alt="" coords="401,35,573,60"/>
+<area shape="rect" href="graph_8c.html#ab0dcf15752533ff66821f447287de904" title="Returns the number of nodes in the graph." alt="" coords="401,35,573,60"/>
 <area shape="poly" title=" " alt="" coords="293,155,337,113,367,90,400,69,415,63,417,68,403,74,370,94,341,117,296,158"/>
 <area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="433,84,541,110"/>
 <area shape="poly" title=" " alt="" coords="311,154,400,119,424,111,425,116,402,124,313,159"/>
@@ -602,38 +839,47 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00070">70</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (g != NULL)</div>
-<div class="line"><span class="lineno">   73</span>    {</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a> != NULL)</div>
-<div class="line"><span class="lineno">   75</span>        {</div>
-<div class="line"><span class="lineno">   76</span>            <span class="keywordtype">size_t</span> node_count = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; node_count; ++i)</div>
-<div class="line"><span class="lineno">   78</span>            {</div>
-<div class="line"><span class="lineno">   79</span>                <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*) <a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, i);</div>
-<div class="line"><span class="lineno">   80</span>                </div>
-<div class="line"><span class="lineno">   81</span>                <span class="keywordflow">if</span> (node != NULL &amp;&amp; node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>)</div>
-<div class="line"><span class="lineno">   82</span>                {</div>
-<div class="line"><span class="lineno">   83</span>                    <span class="keywordflow">if</span> (node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a> != NULL) free(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a>);</div>
-<div class="line"><span class="lineno">   84</span>                    <span class="keywordflow">if</span> (node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL) <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">   85</span>                }</div>
-<div class="line"><span class="lineno">   86</span>            }</div>
-<div class="line"><span class="lineno">   87</span>            <a class="code hl_function" href="vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213">misc_vector_destroy</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a> != NULL) <a class="code hl_function" href="stack_8c.html#a06478412f252903ff6caab548e6d1b8f">misc_stack_destroy</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>);</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>        free((<span class="keywordtype">void</span>*)g);</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span>}</div>
+<p>Destroys the graph and frees all associated memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The graph handle becomes invalid after this call. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00079">79</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (g != NULL)</div>
+<div class="line"><span class="lineno">   82</span>    {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a> != NULL)</div>
+<div class="line"><span class="lineno">   84</span>        {</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordtype">size_t</span> node_count = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; node_count; ++i)</div>
+<div class="line"><span class="lineno">   87</span>            {</div>
+<div class="line"><span class="lineno">   88</span>                <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*) <a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, i);</div>
+<div class="line"><span class="lineno">   89</span>                </div>
+<div class="line"><span class="lineno">   90</span>                <span class="keywordflow">if</span> (node != NULL &amp;&amp; node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>)</div>
+<div class="line"><span class="lineno">   91</span>                {</div>
+<div class="line"><span class="lineno">   92</span>                    <span class="keywordflow">if</span> (node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a> != NULL) free(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#aaa98d5fd97fa12116e426cdfe86b5dd0">data</a>);</div>
+<div class="line"><span class="lineno">   93</span>                    <span class="keywordflow">if</span> (node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL) <a class="code hl_function" href="list_8c.html#a2780dfc89df50644588b6a7320d32890">misc_list_destroy</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">   94</span>                }</div>
+<div class="line"><span class="lineno">   95</span>            }</div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_function" href="vector_8c.html#a2eee319a34dd1d8735f86b7f94f1d213">misc_vector_destroy</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a> != NULL) <a class="code hl_function" href="stack_8c.html#a06478412f252903ff6caab548e6d1b8f">misc_stack_destroy</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a66e13d0bc8d455ba40054d9302b35610">ids</a>);</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>        free((<span class="keywordtype">void</span>*)g);</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="line"><span class="lineno">  103</span>}</div>
 <div class="ttc" id="astack_8c_html_a06478412f252903ff6caab548e6d1b8f"><div class="ttname"><a href="stack_8c.html#a06478412f252903ff6caab548e6d1b8f">misc_stack_destroy</a></div><div class="ttdeci">void misc_stack_destroy(misc_stack st)</div><div class="ttdoc">Destroys the stack and frees all associated memory.</div><div class="ttdef"><b>Definition</b> <a href="stack_8c_source.html#l00029">stack.c:29</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_a4f93bfc963a401b0f688aeccb04c00c8_cgraph.png" border="0" usemap="#agraph_8c_a4f93bfc963a401b0f688aeccb04c00c8_cgraph" alt=""/></div>
 <map name="agraph_8c_a4f93bfc963a401b0f688aeccb04c00c8_cgraph" id="agraph_8c_a4f93bfc963a401b0f688aeccb04c00c8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,105,159,131"/>
+<area shape="rect" title="Destroys the graph and frees all associated memory." alt="" coords="5,105,159,131"/>
 <area shape="rect" href="list_8c.html#a2780dfc89df50644588b6a7320d32890" title="Destroys the list and frees all associated memory." alt="" coords="214,5,350,31"/>
 <area shape="poly" title=" " alt="" coords="99,103,146,72,206,40,222,33,224,38,208,44,149,77,102,107"/>
 <area shape="rect" href="stack_8c.html#a06478412f252903ff6caab548e6d1b8f" title="Destroys the stack and frees all associated memory." alt="" coords="207,55,357,80"/>
@@ -647,6 +893,111 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="list_8c.html#af046f424af8cb38e54786924187889b0" title="Removes all elements from the list." alt="" coords="425,5,543,31"/>
 <area shape="poly" title=" " alt="" coords="350,15,411,15,411,21,350,21"/>
 <area shape="poly" title=" " alt="" coords="358,74,392,78,391,84,357,79"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea8e3ef45512537752768ac3a9cf9a70" name="aea8e3ef45512537752768ac3a9cf9a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8e3ef45512537752768ac3a9cf9a70">&#9670;&#160;</a></span>misc_graph_getw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double misc_graph_getw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elem2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the weight of an edge between two nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to query </td></tr>
+    <tr><td class="paramname">elem1</td><td>Identifier of the first node </td></tr>
+    <tr><td class="paramname">elem2</td><td>Identifier of the second node </td></tr>
+    <tr><td class="paramname">status</td><td>Optional pointer to status code (0 on success, non-zero on failure) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Weight of the edge, or 0.0 if the edge doesn't exist </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The graph must have been created with MISC_GRAPH_WEIGHTED flag. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00430">430</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  431</span>{</div>
+<div class="line"><span class="lineno">  432</span>    <span class="keywordflow">if</span> (g == NULL || !<a class="code hl_function" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454">misc_graph_islink</a>(g, elem1, elem2))</div>
+<div class="line"><span class="lineno">  433</span>    {</div>
+<div class="line"><span class="lineno">  434</span>        <span class="keywordflow">if</span> (status != NULL) *status = -1;</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">  436</span>    }</div>
+<div class="line"><span class="lineno">  437</span> </div>
+<div class="line"><span class="lineno">  438</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
+<div class="line"><span class="lineno">  439</span>    <span class="keywordflow">if</span> (node1 == NULL || node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL)</div>
+<div class="line"><span class="lineno">  440</span>    {</div>
+<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">if</span> (status != NULL) *status = -1;</div>
+<div class="line"><span class="lineno">  442</span>        <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">  443</span>    }</div>
+<div class="line"><span class="lineno">  444</span> </div>
+<div class="line"><span class="lineno">  445</span>    <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  446</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
+<div class="line"><span class="lineno">  447</span>    {</div>
+<div class="line"><span class="lineno">  448</span>        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  449</span>        <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  450</span>        {</div>
+<div class="line"><span class="lineno">  451</span>            <span class="keywordflow">if</span> (status != NULL) *status = 0;</div>
+<div class="line"><span class="lineno">  452</span>            <span class="keywordflow">return</span> edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#afa8146cb41e7027eb65ee6759df791c1">weight</a>;</div>
+<div class="line"><span class="lineno">  453</span>        }</div>
+<div class="line"><span class="lineno">  454</span>    }</div>
+<div class="line"><span class="lineno">  455</span> </div>
+<div class="line"><span class="lineno">  456</span>    <span class="keywordflow">if</span> (status != NULL) *status = -1;</div>
+<div class="line"><span class="lineno">  457</span>    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">  458</span>}</div>
+<div class="ttc" id="agraph_8c_html_a32bc3a80b3369ad48f657cf338d0a454"><div class="ttname"><a href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454">misc_graph_islink</a></div><div class="ttdeci">int misc_graph_islink(misc_graph g, size_t elem1, size_t elem2)</div><div class="ttdoc">Checks if an edge exists between two nodes.</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00212">graph.c:212</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="graph_8c_aea8e3ef45512537752768ac3a9cf9a70_cgraph.png" border="0" usemap="#agraph_8c_aea8e3ef45512537752768ac3a9cf9a70_cgraph" alt=""/></div>
+<map name="agraph_8c_aea8e3ef45512537752768ac3a9cf9a70_cgraph" id="agraph_8c_aea8e3ef45512537752768ac3a9cf9a70_cgraph">
+<area shape="rect" title="Retrieves the weight of an edge between two nodes." alt="" coords="5,80,141,105"/>
+<area shape="rect" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454" title="Checks if an edge exists between two nodes." alt="" coords="189,105,328,131"/>
+<area shape="poly" title=" " alt="" coords="142,99,176,104,175,109,141,105"/>
+<area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="397,5,505,31"/>
+<area shape="poly" title=" " alt="" coords="118,77,189,59,383,25,384,30,190,65,119,82"/>
+<area shape="rect" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73" title="Returns the number of elements currently stored in the list." alt="" coords="394,56,507,81"/>
+<area shape="poly" title=" " alt="" coords="141,86,380,70,381,76,142,91"/>
+<area shape="rect" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09" title="Returns a pointer to the element at the specified index." alt="" coords="386,155,515,180"/>
+<area shape="poly" title=" " alt="" coords="99,103,140,123,190,141,284,158,372,164,372,169,283,163,189,146,138,128,96,108"/>
+<area shape="poly" title=" " alt="" coords="275,103,319,73,375,41,393,33,395,38,377,46,322,77,278,107"/>
+<area shape="poly" title=" " alt="" coords="308,103,386,82,388,87,309,108"/>
+<area shape="poly" title=" " alt="" coords="309,128,388,149,386,154,308,133"/>
+<area shape="rect" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="376,105,525,131"/>
+<area shape="poly" title=" " alt="" coords="328,115,363,115,363,121,328,121"/>
 </map>
 </div>
 
@@ -684,46 +1035,57 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00203">203</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  204</span>{</div>
-<div class="line"><span class="lineno">  205</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">if</span> (elem1 &gt;= nnodes || elem2 &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  209</span> </div>
-<div class="line"><span class="lineno">  210</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *n1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
-<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">if</span> (n1 == NULL || !n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> || n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    <span class="keywordtype">int</span> found = 0;</div>
-<div class="line"><span class="lineno">  214</span>    <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size &amp;&amp; !found; ++i)</div>
-<div class="line"><span class="lineno">  216</span>    {</div>
-<div class="line"><span class="lineno">  217</span>        <span class="keywordtype">size_t</span> idx = *(<span class="keywordtype">size_t</span>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
-<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">if</span> (idx == elem2) found = 1;</div>
-<div class="line"><span class="lineno">  219</span>    }</div>
-<div class="line"><span class="lineno">  220</span> </div>
-<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a> &amp;&amp; !found)</div>
-<div class="line"><span class="lineno">  222</span>    {</div>
-<div class="line"><span class="lineno">  223</span>        <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *n2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
-<div class="line"><span class="lineno">  224</span>        <span class="keywordflow">if</span> (n2 != NULL &amp;&amp; n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> &amp;&amp; n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL)</div>
-<div class="line"><span class="lineno">  225</span>        {</div>
-<div class="line"><span class="lineno">  226</span>            <span class="keywordtype">size_t</span> list_size2 = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">  227</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size2 &amp;&amp; !found; ++i)</div>
-<div class="line"><span class="lineno">  228</span>            {</div>
-<div class="line"><span class="lineno">  229</span>                <span class="keywordtype">size_t</span> idx = *(<span class="keywordtype">size_t</span>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
-<div class="line"><span class="lineno">  230</span>                <span class="keywordflow">if</span> (idx == elem1) found = 1;</div>
-<div class="line"><span class="lineno">  231</span>            }</div>
-<div class="line"><span class="lineno">  232</span>        }</div>
-<div class="line"><span class="lineno">  233</span>    }</div>
-<div class="line"><span class="lineno">  234</span> </div>
-<div class="line"><span class="lineno">  235</span>    <span class="keywordflow">return</span> found;</div>
-<div class="line"><span class="lineno">  236</span>}</div>
+<p>Checks if an edge exists between two nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to query </td></tr>
+    <tr><td class="paramname">elem1</td><td>Identifier of the first node </td></tr>
+    <tr><td class="paramname">elem2</td><td>Identifier of the second node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the edge exists, 0 otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00212">212</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  213</span>{</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">if</span> (elem1 &gt;= nnodes || elem2 &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *n1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
+<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">if</span> (n1 == NULL || !n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> || n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>    <span class="keywordtype">int</span> found = 0;</div>
+<div class="line"><span class="lineno">  223</span>    <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  224</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size &amp;&amp; !found; ++i)</div>
+<div class="line"><span class="lineno">  225</span>    {</div>
+<div class="line"><span class="lineno">  226</span>        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(n1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2) found = 1;</div>
+<div class="line"><span class="lineno">  228</span>    }</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a> &amp;&amp; !found)</div>
+<div class="line"><span class="lineno">  231</span>    {</div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *n2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
+<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (n2 != NULL &amp;&amp; n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> &amp;&amp; n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> != NULL)</div>
+<div class="line"><span class="lineno">  234</span>        {</div>
+<div class="line"><span class="lineno">  235</span>            <span class="keywordtype">size_t</span> list_size2 = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  236</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size2 &amp;&amp; !found; ++i)</div>
+<div class="line"><span class="lineno">  237</span>            {</div>
+<div class="line"><span class="lineno">  238</span>                <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(n2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  239</span>                <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem1) found = 1;</div>
+<div class="line"><span class="lineno">  240</span>            }</div>
+<div class="line"><span class="lineno">  241</span>        }</div>
+<div class="line"><span class="lineno">  242</span>    }</div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">return</span> found;</div>
+<div class="line"><span class="lineno">  245</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_a32bc3a80b3369ad48f657cf338d0a454_cgraph.png" border="0" usemap="#agraph_8c_a32bc3a80b3369ad48f657cf338d0a454_cgraph" alt=""/></div>
 <map name="agraph_8c_a32bc3a80b3369ad48f657cf338d0a454_cgraph" id="agraph_8c_a32bc3a80b3369ad48f657cf338d0a454_cgraph">
-<area shape="rect" title=" " alt="" coords="5,80,144,105"/>
+<area shape="rect" title="Checks if an edge exists between two nodes." alt="" coords="5,80,144,105"/>
 <area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="213,5,321,31"/>
 <area shape="poly" title=" " alt="" coords="102,77,191,40,210,33,212,38,193,44,104,82"/>
 <area shape="rect" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73" title="Returns the number of elements currently stored in the list." alt="" coords="210,55,323,80"/>
@@ -739,9 +1101,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_a32bc3a80b3369ad48f657cf338d0a454_icgraph.png" border="0" usemap="#agraph_8c_a32bc3a80b3369ad48f657cf338d0a454_icgraph" alt=""/></div>
 <map name="agraph_8c_a32bc3a80b3369ad48f657cf338d0a454_icgraph" id="agraph_8c_a32bc3a80b3369ad48f657cf338d0a454_icgraph">
-<area shape="rect" title=" " alt="" coords="181,5,320,31"/>
-<area shape="rect" href="graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="5,5,133,31"/>
-<area shape="poly" title=" " alt="" coords="168,21,134,21,134,15,168,15"/>
+<area shape="rect" title="Checks if an edge exists between two nodes." alt="" coords="189,31,328,56"/>
+<area shape="rect" href="graph_8c.html#aea8e3ef45512537752768ac3a9cf9a70" title="Retrieves the weight of an edge between two nodes." alt="" coords="5,5,141,31"/>
+<area shape="poly" title=" " alt="" coords="176,35,141,30,142,25,176,29"/>
+<area shape="rect" href="graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="9,55,137,80"/>
+<area shape="poly" title=" " alt="" coords="176,57,138,62,138,56,175,51"/>
 </map>
 </div>
 
@@ -781,15 +1145,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00239">239</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  240</span>{</div>
-<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  242</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">  243</span>    <span class="keywordflow">if</span> (idx &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  244</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, idx);</div>
-<div class="line"><span class="lineno">  245</span>    <span class="keywordflow">if</span> (node == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  246</span>    <span class="keywordflow">return</span> node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>;</div>
-<div class="line"><span class="lineno">  247</span>}</div>
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00248">248</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  251</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">if</span> (idx &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  253</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, idx);</div>
+<div class="line"><span class="lineno">  254</span>    <span class="keywordflow">if</span> (node == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">return</span> node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>;</div>
+<div class="line"><span class="lineno">  256</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -807,9 +1171,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_abe5b730b7b029bd528e2ec6021c9aab9_icgraph.png" border="0" usemap="#agraph_8c_abe5b730b7b029bd528e2ec6021c9aab9_icgraph" alt=""/></div>
 <map name="agraph_8c_abe5b730b7b029bd528e2ec6021c9aab9_icgraph" id="agraph_8c_abe5b730b7b029bd528e2ec6021c9aab9_icgraph">
-<area shape="rect" title=" " alt="" coords="181,5,328,31"/>
-<area shape="rect" href="graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="5,5,133,31"/>
-<area shape="poly" title=" " alt="" coords="168,21,133,21,133,15,168,15"/>
+<area shape="rect" title=" " alt="" coords="192,31,339,56"/>
+<area shape="rect" href="graph_8c.html#ac43737c9d7c65517445b3bc89a33a928" title="Adds or updates a weighted edge between two nodes." alt="" coords="5,5,144,31"/>
+<area shape="poly" title=" " alt="" coords="178,34,144,30,145,25,179,29"/>
+<area shape="rect" href="graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="11,55,139,80"/>
+<area shape="poly" title=" " alt="" coords="179,57,139,62,139,57,178,52"/>
 </map>
 </div>
 
@@ -847,65 +1213,76 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00250">250</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  251</span>{</div>
-<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  253</span> </div>
-<div class="line"><span class="lineno">  254</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">if</span> (elem1 &gt;= nnodes || elem2 &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  256</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a>(g, elem1) || !<a class="code hl_function" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a>(g, elem2)) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  257</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454">misc_graph_islink</a>(g, elem1, elem2)) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  258</span> </div>
-<div class="line"><span class="lineno">  259</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
-<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">if</span> (node1 == NULL || node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  261</span> </div>
-<div class="line"><span class="lineno">  262</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, &amp;elem2)) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  263</span> </div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a>)</div>
-<div class="line"><span class="lineno">  265</span>    {</div>
-<div class="line"><span class="lineno">  266</span>        <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
-<div class="line"><span class="lineno">  267</span>        <span class="keywordflow">if</span> (node2 == NULL || node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL)</div>
-<div class="line"><span class="lineno">  268</span>        {</div>
-<div class="line"><span class="lineno">  269</span>            <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">  270</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
-<div class="line"><span class="lineno">  271</span>            {</div>
-<div class="line"><span class="lineno">  272</span>                <span class="keywordtype">size_t</span> *p = (<span class="keywordtype">size_t</span>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
-<div class="line"><span class="lineno">  273</span>                <span class="keywordflow">if</span> (p != NULL &amp;&amp; *p == elem2)</div>
-<div class="line"><span class="lineno">  274</span>                {</div>
-<div class="line"><span class="lineno">  275</span>                    <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
-<div class="line"><span class="lineno">  276</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  277</span>                }</div>
-<div class="line"><span class="lineno">  278</span>            }</div>
-<div class="line"><span class="lineno">  279</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  280</span>        }</div>
-<div class="line"><span class="lineno">  281</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, &amp;elem1))</div>
-<div class="line"><span class="lineno">  282</span>        {</div>
-<div class="line"><span class="lineno">  283</span>            <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
-<div class="line"><span class="lineno">  284</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
-<div class="line"><span class="lineno">  285</span>            {</div>
-<div class="line"><span class="lineno">  286</span>                <span class="keywordtype">size_t</span> *p = (<span class="keywordtype">size_t</span>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
-<div class="line"><span class="lineno">  287</span>                <span class="keywordflow">if</span> (p != NULL &amp;&amp; *p == elem2)</div>
-<div class="line"><span class="lineno">  288</span>                {</div>
-<div class="line"><span class="lineno">  289</span>                    <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
-<div class="line"><span class="lineno">  290</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  291</span>                }</div>
-<div class="line"><span class="lineno">  292</span>            }</div>
-<div class="line"><span class="lineno">  293</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  294</span>        }</div>
-<div class="line"><span class="lineno">  295</span>    }</div>
-<div class="line"><span class="lineno">  296</span> </div>
-<div class="line"><span class="lineno">  297</span>    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  298</span>}</div>
-<div class="ttc" id="agraph_8c_html_a32bc3a80b3369ad48f657cf338d0a454"><div class="ttname"><a href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454">misc_graph_islink</a></div><div class="ttdeci">int misc_graph_islink(misc_graph g, size_t elem1, size_t elem2)</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00203">graph.c:203</a></div></div>
-<div class="ttc" id="agraph_8c_html_abe5b730b7b029bd528e2ec6021c9aab9"><div class="ttname"><a href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a></div><div class="ttdeci">static int misc_graph_isnode(misc_graph g, size_t idx)</div><div class="ttdef"><b>Definition</b> <a href="graph_8c_source.html#l00239">graph.c:239</a></div></div>
-<div class="ttc" id="alist_8c_html_ad9a6fd88109db10289626be1e26befc7"><div class="ttname"><a href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a></div><div class="ttdeci">int misc_list_pushback(misc_list list, const void *elem)</div><div class="ttdoc">Inserts an element at the back of the list.</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00115">list.c:115</a></div></div>
+<p>Creates an edge between two nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to modify </td></tr>
+    <tr><td class="paramname">elem1</td><td>Identifier of the first node </td></tr>
+    <tr><td class="paramname">elem2</td><td>Identifier of the second node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>For undirected graphs, the edge is bidirectional. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00259">259</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  260</span>{</div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">if</span> (elem1 &gt;= nnodes || elem2 &gt;= nnodes) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a>(g, elem1) || !<a class="code hl_function" href="graph_8c.html#abe5b730b7b029bd528e2ec6021c9aab9">misc_graph_isnode</a>(g, elem2)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454">misc_graph_islink</a>(g, elem1, elem2)) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">if</span> (node1 == NULL || node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  270</span> </div>
+<div class="line"><span class="lineno">  271</span>    <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> edge = { .<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> = elem2, .weight = 1.0 };</div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, &amp;edge)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a>)</div>
+<div class="line"><span class="lineno">  275</span>    {</div>
+<div class="line"><span class="lineno">  276</span>        <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keywordflow">if</span> (node2 == NULL || node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a> == NULL)</div>
+<div class="line"><span class="lineno">  278</span>        {</div>
+<div class="line"><span class="lineno">  279</span>            <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  280</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
+<div class="line"><span class="lineno">  281</span>            {</div>
+<div class="line"><span class="lineno">  282</span>                <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *e = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  283</span>                <span class="keywordflow">if</span> (e != NULL &amp;&amp; e-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  284</span>                {</div>
+<div class="line"><span class="lineno">  285</span>                    <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
+<div class="line"><span class="lineno">  286</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  287</span>                }</div>
+<div class="line"><span class="lineno">  288</span>            }</div>
+<div class="line"><span class="lineno">  289</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  290</span>        }</div>
+<div class="line"><span class="lineno">  291</span>        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> edge2 = { .<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> = elem1, .weight = 1.0 };</div>
+<div class="line"><span class="lineno">  292</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="list_8c.html#ad9a6fd88109db10289626be1e26befc7">misc_list_pushback</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, &amp;edge2))</div>
+<div class="line"><span class="lineno">  293</span>        {</div>
+<div class="line"><span class="lineno">  294</span>            <span class="keywordtype">size_t</span> list_size = <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  295</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list_size; ++i)</div>
+<div class="line"><span class="lineno">  296</span>            {</div>
+<div class="line"><span class="lineno">  297</span>                <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *e = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  298</span>                <span class="keywordflow">if</span> (e != NULL &amp;&amp; e-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  299</span>                {</div>
+<div class="line"><span class="lineno">  300</span>                    <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
+<div class="line"><span class="lineno">  301</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  302</span>                }</div>
+<div class="line"><span class="lineno">  303</span>            }</div>
+<div class="line"><span class="lineno">  304</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  305</span>        }</div>
+<div class="line"><span class="lineno">  306</span>    }</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  309</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_ae44951c4c2e489b1f1c429142ddd2736_cgraph.png" border="0" usemap="#agraph_8c_ae44951c4c2e489b1f1c429142ddd2736_cgraph" alt=""/></div>
 <map name="agraph_8c_ae44951c4c2e489b1f1c429142ddd2736_cgraph" id="agraph_8c_ae44951c4c2e489b1f1c429142ddd2736_cgraph">
-<area shape="rect" title=" " alt="" coords="5,169,133,195"/>
-<area shape="rect" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454" title=" " alt="" coords="187,93,325,119"/>
+<area shape="rect" title="Creates an edge between two nodes." alt="" coords="5,169,133,195"/>
+<area shape="rect" href="graph_8c.html#a32bc3a80b3369ad48f657cf338d0a454" title="Checks if an edge exists between two nodes." alt="" coords="187,93,325,119"/>
 <area shape="poly" title=" " alt="" coords="100,167,210,122,212,126,102,172"/>
 <area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="399,5,507,31"/>
 <area shape="poly" title=" " alt="" coords="75,168,114,110,144,78,180,52,231,31,285,18,338,13,386,11,386,17,339,18,286,24,233,36,183,56,147,82,118,114,80,171"/>
@@ -934,6 +1311,63 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a375b3f49e27fd5e4e98c2c15d74b33ad" name="a375b3f49e27fd5e4e98c2c15d74b33ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375b3f49e27fd5e4e98c2c15d74b33ad">&#9670;&#160;</a></span>misc_graph_linkcount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t misc_graph_linkcount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of edges in the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of edges in the graph </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00461">461</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  462</span>{</div>
+<div class="line"><span class="lineno">  463</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  464</span> </div>
+<div class="line"><span class="lineno">  465</span>    <span class="keywordtype">size_t</span> tot = 0;</div>
+<div class="line"><span class="lineno">  466</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>); ++i)</div>
+<div class="line"><span class="lineno">  467</span>    {</div>
+<div class="line"><span class="lineno">  468</span>        <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, i);</div>
+<div class="line"><span class="lineno">  469</span>        <span class="keywordflow">if</span> (node == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  470</span> </div>
+<div class="line"><span class="lineno">  471</span>        tot += <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>);</div>
+<div class="line"><span class="lineno">  472</span>    }</div>
+<div class="line"><span class="lineno">  473</span> </div>
+<div class="line"><span class="lineno">  474</span>    <span class="keywordflow">return</span> tot;</div>
+<div class="line"><span class="lineno">  475</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="graph_8c_a375b3f49e27fd5e4e98c2c15d74b33ad_cgraph.png" border="0" usemap="#agraph_8c_a375b3f49e27fd5e4e98c2c15d74b33ad_cgraph" alt=""/></div>
+<map name="agraph_8c_a375b3f49e27fd5e4e98c2c15d74b33ad_cgraph" id="agraph_8c_a375b3f49e27fd5e4e98c2c15d74b33ad_cgraph">
+<area shape="rect" title="Returns the number of edges in the graph." alt="" coords="5,55,169,80"/>
+<area shape="rect" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73" title="Returns the number of elements currently stored in the list." alt="" coords="235,5,349,31"/>
+<area shape="poly" title=" " alt="" coords="140,52,225,31,226,37,141,57"/>
+<area shape="rect" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09" title="Returns a pointer to the element at the specified index." alt="" coords="227,55,357,80"/>
+<area shape="poly" title=" " alt="" coords="170,65,214,65,214,70,170,70"/>
+<area shape="rect" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="217,104,367,129"/>
+<area shape="poly" title=" " alt="" coords="141,77,226,98,225,103,140,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ab0dcf15752533ff66821f447287de904" name="ab0dcf15752533ff66821f447287de904"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0dcf15752533ff66821f447287de904">&#9670;&#160;</a></span>misc_graph_nodecount()</h2>
 
@@ -950,17 +1384,26 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00033">33</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
-<div class="line"><span class="lineno">   37</span>}</div>
+<p>Returns the number of nodes in the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of nodes in the graph </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00042">42</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6">misc_vector_length</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_ab0dcf15752533ff66821f447287de904_cgraph.png" border="0" usemap="#agraph_8c_ab0dcf15752533ff66821f447287de904_cgraph" alt=""/></div>
 <map name="agraph_8c_ab0dcf15752533ff66821f447287de904_cgraph" id="agraph_8c_ab0dcf15752533ff66821f447287de904_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,177,31"/>
+<area shape="rect" title="Returns the number of nodes in the graph." alt="" coords="5,5,177,31"/>
 <area shape="rect" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="225,5,375,31"/>
 <area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
 </map>
@@ -970,11 +1413,116 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph_8c_ab0dcf15752533ff66821f447287de904_icgraph.png" border="0" usemap="#agraph_8c_ab0dcf15752533ff66821f447287de904_icgraph" alt=""/></div>
 <map name="agraph_8c_ab0dcf15752533ff66821f447287de904_icgraph" id="agraph_8c_ab0dcf15752533ff66821f447287de904_icgraph">
-<area shape="rect" title=" " alt="" coords="401,5,573,31"/>
+<area shape="rect" title="Returns the number of nodes in the graph." alt="" coords="401,31,573,56"/>
 <area shape="rect" href="graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="209,5,353,31"/>
-<area shape="poly" title=" " alt="" coords="387,21,354,21,354,15,387,15"/>
-<area shape="rect" href="graph_8c.html#a54368db483cec7cca53299b6e6d17252" title=" " alt="" coords="5,5,161,31"/>
+<area shape="poly" title=" " alt="" coords="387,34,354,30,354,24,388,28"/>
+<area shape="rect" href="graph_8c.html#acb4bd25513f3ddc2adb82f3536212050" title="Removes an edge between two nodes." alt="" coords="209,55,353,80"/>
+<area shape="poly" title=" " alt="" coords="388,58,354,62,354,56,387,52"/>
+<area shape="rect" href="graph_8c.html#a54368db483cec7cca53299b6e6d17252" title="Removes a node from the graph." alt="" coords="5,5,161,31"/>
 <area shape="poly" title=" " alt="" coords="195,21,162,21,162,15,195,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb4bd25513f3ddc2adb82f3536212050" name="acb4bd25513f3ddc2adb82f3536212050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4bd25513f3ddc2adb82f3536212050">&#9670;&#160;</a></span>misc_graph_unlink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void misc_graph_unlink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph_8h.html#aca15459cf9f6b5f5bfd56059d88e5405">misc_graph</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elem2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an edge between two nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph to modify </td></tr>
+    <tr><td class="paramname">elem1</td><td>Identifier of the first node </td></tr>
+    <tr><td class="paramname">elem2</td><td>Identifier of the second node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>For undirected graphs, removes the edge in both directions. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="graph_8c_source.html#l00312">312</a> of file <a class="el" href="graph_8c_source.html">graph.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  313</span>{</div>
+<div class="line"><span class="lineno">  314</span>    <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>    <span class="keywordtype">size_t</span> nnodes = <a class="code hl_function" href="graph_8c.html#ab0dcf15752533ff66821f447287de904">misc_graph_nodecount</a>(g);</div>
+<div class="line"><span class="lineno">  317</span>    <span class="keywordflow">if</span> (elem1 &gt;= nnodes || elem2 &gt;= nnodes) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  318</span> </div>
+<div class="line"><span class="lineno">  319</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node1 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem1);</div>
+<div class="line"><span class="lineno">  320</span>    <a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a> *node2 = (<a class="code hl_struct" href="structmisc__generic__graphnode.html">misc_gnode</a>*)<a class="code hl_function" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09">misc_vector_get</a>(g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#a0317cc8394fadabc832769aee9fed478">nodes</a>, elem2);</div>
+<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">if</span> (node1 == NULL || node2 == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  322</span>    <span class="keywordflow">if</span> (!node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a> || !node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a2e18f2d6891003dde52263fe86f1d069">is_active</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>); ++i)</div>
+<div class="line"><span class="lineno">  325</span>    {</div>
+<div class="line"><span class="lineno">  326</span>        <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem2)</div>
+<div class="line"><span class="lineno">  328</span>        {</div>
+<div class="line"><span class="lineno">  329</span>            <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node1-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
+<div class="line"><span class="lineno">  330</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  331</span>        }</div>
+<div class="line"><span class="lineno">  332</span>    }</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>    <span class="keywordflow">if</span> (g-&gt;<a class="code hl_variable" href="structmisc__generic__graph.html#ac6aaa80245da66ed4693d66ec317e723">is_undirected</a>)</div>
+<div class="line"><span class="lineno">  335</span>    {</div>
+<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73">misc_list_size</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>); ++i)</div>
+<div class="line"><span class="lineno">  337</span>        {</div>
+<div class="line"><span class="lineno">  338</span>            <a class="code hl_struct" href="structmisc__edge.html">misc_edge</a> *edge = (<a class="code hl_struct" href="structmisc__edge.html">misc_edge</a>*)<a class="code hl_function" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff">misc_list_get</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i);</div>
+<div class="line"><span class="lineno">  339</span>            <span class="keywordflow">if</span> (edge != NULL &amp;&amp; edge-&gt;<a class="code hl_variable" href="structmisc__edge.html#a83ec9f5db9ad562c0989527133351cba">target</a> == elem1)</div>
+<div class="line"><span class="lineno">  340</span>            {</div>
+<div class="line"><span class="lineno">  341</span>                <a class="code hl_function" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997">misc_list_remove</a>(node2-&gt;<a class="code hl_variable" href="structmisc__generic__graphnode.html#a77b8c473d40a16346b0490929ce5f655">neighbors</a>, i, NULL);</div>
+<div class="line"><span class="lineno">  342</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  343</span>            }</div>
+<div class="line"><span class="lineno">  344</span>        }</div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+<div class="line"><span class="lineno">  346</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="graph_8c_acb4bd25513f3ddc2adb82f3536212050_cgraph.png" border="0" usemap="#agraph_8c_acb4bd25513f3ddc2adb82f3536212050_cgraph" alt=""/></div>
+<map name="agraph_8c_acb4bd25513f3ddc2adb82f3536212050_cgraph" id="agraph_8c_acb4bd25513f3ddc2adb82f3536212050_cgraph">
+<area shape="rect" title="Removes an edge between two nodes." alt="" coords="5,104,149,129"/>
+<area shape="rect" href="graph_8c.html#ab0dcf15752533ff66821f447287de904" title="Returns the number of nodes in the graph." alt="" coords="197,5,369,31"/>
+<area shape="poly" title=" " alt="" coords="94,102,139,71,196,40,215,32,216,37,198,44,142,76,97,106"/>
+<area shape="rect" href="list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="229,55,337,80"/>
+<area shape="poly" title=" " alt="" coords="130,101,216,81,217,86,132,107"/>
+<area shape="rect" href="list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997" title="Removes the element at the specified index." alt="" coords="215,104,352,129"/>
+<area shape="poly" title=" " alt="" coords="150,114,201,114,201,119,150,119"/>
+<area shape="rect" href="list_8c.html#a3db326c38b29b767fea4150c9a8cce73" title="Returns the number of elements currently stored in the list." alt="" coords="227,153,340,179"/>
+<area shape="poly" title=" " alt="" coords="132,127,217,147,216,153,130,132"/>
+<area shape="rect" href="vector_8c.html#a6e5ed84fe8737be3709265bf76021e09" title="Returns a pointer to the element at the specified index." alt="" coords="219,203,348,228"/>
+<area shape="poly" title=" " alt="" coords="97,127,142,157,198,188,219,196,218,201,196,192,139,162,94,132"/>
+<area shape="rect" href="vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="417,5,567,31"/>
+<area shape="poly" title=" " alt="" coords="370,15,404,15,404,21,370,21"/>
+<area shape="rect" href="list_8c.html#aad719fd3f6c91beaae26e856daecd43b" title="Removes the first element from the list." alt="" coords="421,104,563,129"/>
+<area shape="poly" title=" " alt="" coords="352,114,407,114,407,119,352,119"/>
 </map>
 </div>
 

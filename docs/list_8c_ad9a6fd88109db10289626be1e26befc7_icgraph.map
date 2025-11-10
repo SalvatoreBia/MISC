@@ -1,14 +1,16 @@
 <map id="misc_list_pushback" name="misc_list_pushback">
-<area shape="rect" id="Node000001" title="Inserts an element at the back of the list." alt="" coords="389,107,539,132"/>
+<area shape="rect" id="Node000001" title="Inserts an element at the back of the list." alt="" coords="389,132,539,157"/>
 <area shape="rect" id="Node000002" href="$htable_8c.html#ac50b9ee27f2215635f04cd67dca254dc" title=" " alt="" coords="183,5,341,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,102,340,52,296,33,298,28,343,48,432,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,125,393,89,340,52,299,33,301,28,343,48,396,84,440,121"/>
 <area shape="rect" id="Node000003" href="$htable_8c.html#a5cb7c6a8e6597ffff52bca6166604ffa" title="Inserts or updates a key&#45;value pair in the hash table." alt="" coords="5,31,135,56"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="389,106,341,97,134,57,135,52,342,91,390,101"/>
-<area shape="rect" id="Node000004" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title=" " alt="" coords="198,107,326,132"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,122,326,122,326,117,375,117"/>
-<area shape="rect" id="Node000005" href="$list_8c.html#ac56e0cfefa4bfd555df1b8d5f6504b88" title="Inserts an element at the specified index." alt="" coords="200,156,324,181"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="399,138,315,159,314,153,397,133"/>
-<area shape="rect" id="Node000006" href="$queue_8c.html#a13edddf93793357a6077ca42418750fb" title="Enqueues an element at the back of the queue." alt="" coords="193,205,331,231"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="434,142,392,169,342,195,310,208,308,203,340,190,389,164,432,138"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="424,129,341,97,232,71,135,54,135,49,233,65,342,91,425,124"/>
+<area shape="rect" id="Node000004" href="$graph_8c.html#ac43737c9d7c65517445b3bc89a33a928" title="Adds or updates a weighted edge between two nodes." alt="" coords="193,107,331,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,136,331,131,332,125,376,131"/>
+<area shape="rect" id="Node000005" href="$graph_8c.html#ae44951c4c2e489b1f1c429142ddd2736" title="Creates an edge between two nodes." alt="" coords="198,156,326,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="376,158,327,164,326,158,375,153"/>
+<area shape="rect" id="Node000006" href="$list_8c.html#ac56e0cfefa4bfd555df1b8d5f6504b88" title="Inserts an element at the specified index." alt="" coords="200,205,324,231"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="420,165,342,195,305,208,303,203,340,190,418,160"/>
+<area shape="rect" id="Node000007" href="$queue_8c.html#a13edddf93793357a6077ca42418750fb" title="Enqueues an element at the back of the queue." alt="" coords="193,255,331,280"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="441,170,397,207,343,244,313,257,311,252,340,240,394,203,438,166"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,33,135,37,134,32,169,28"/>
 </map>
