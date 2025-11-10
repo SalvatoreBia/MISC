@@ -10,7 +10,7 @@ The current data structures available are:
 - misc_queue
 - misc_list
 - misc_htable
-- misc_graph (still working on it)
+- misc_graph
 
 You can check the documentation on the github pages for this repo.
 
