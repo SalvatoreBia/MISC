@@ -1,0 +1,29 @@
+<map id="misc_graph_delnode" name="misc_graph_delnode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,231,161,256"/>
+<area shape="rect" id="Node000002" href="$graph_8c.html#a203c4a2126bd6939c7a08bd7a364dd29" title=" " alt="" coords="209,156,353,182"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,228,233,184,235,189,119,233"/>
+<area shape="rect" id="Node000004" href="$vector_8c.html#a618634644c4573eab10c32bfbe9698e6" title="Returns the number of elements currently stored in the vector." alt="" coords="621,10,771,35"/>
+<area shape="poly" id="edge14_Node000001_Node000004" title=" " alt="" coords="94,229,139,185,210,125,253,93,300,64,349,39,401,20,453,9,507,4,607,7,607,13,507,9,454,14,402,25,351,44,302,69,256,98,213,129,143,189,98,233"/>
+<area shape="rect" id="Node000009" href="$vector_8c.html#a6e5ed84fe8737be3709265bf76021e09" title="Returns a pointer to the element at the specified index." alt="" coords="423,232,552,258"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="162,241,409,242,409,248,162,247"/>
+<area shape="rect" id="Node000010" href="$list_8c.html#a2780dfc89df50644588b6a7320d32890" title="Destroys the list and frees all associated memory." alt="" coords="213,282,349,307"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="135,254,219,276,217,281,133,259"/>
+<area shape="rect" id="Node000012" href="$stack_8c.html#abbf435ad349273c752e6542d95e4e161" title="Pushes an element onto the top of the stack." alt="" coords="215,331,348,356"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="104,255,151,285,210,317,226,324,224,329,208,322,149,290,102,259"/>
+<area shape="rect" id="Node000003" href="$graph_8c.html#ab0dcf15752533ff66821f447287de904" title=" " alt="" coords="401,35,573,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,155,337,113,367,90,400,69,415,63,417,68,403,74,370,94,341,117,296,158"/>
+<area shape="rect" id="Node000005" href="$list_8c.html#a4752f71c443c459acce222f7fb1b5aff" title="Returns a pointer to the element at the specified index." alt="" coords="433,84,541,110"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="311,154,400,119,424,111,425,116,402,124,313,159"/>
+<area shape="rect" id="Node000006" href="$list_8c.html#a64d4a33bc26ac3e093e8ff128caa9997" title="Removes the element at the specified index." alt="" coords="419,134,556,159"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="353,159,405,153,405,158,354,164"/>
+<area shape="rect" id="Node000008" href="$list_8c.html#a3db326c38b29b767fea4150c9a8cce73" title="Returns the number of elements currently stored in the list." alt="" coords="431,183,544,208"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="354,176,417,184,417,189,353,181"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="310,180,402,219,425,226,423,231,400,224,308,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="573,35,607,31,608,36,574,40"/>
+<area shape="rect" id="Node000007" href="$list_8c.html#aad719fd3f6c91beaae26e856daecd43b" title="Removes the first element from the list." alt="" coords="625,134,767,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="556,144,611,144,611,149,556,149"/>
+<area shape="rect" id="Node000011" href="$list_8c.html#af046f424af8cb38e54786924187889b0" title="Removes all elements from the list." alt="" coords="428,282,547,307"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="350,292,414,292,414,297,350,297"/>
+<area shape="rect" id="Node000013" href="$vector_8c.html#a30fdd89eafc21724ffe1c403af5ac4ce" title="Appends an element to the end of the vector." alt="" coords="402,331,573,356"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="348,341,388,341,388,346,348,346"/>
+</map>
